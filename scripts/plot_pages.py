@@ -56,10 +56,10 @@ words.append(53)
 # dayssince = reversed(dayssince)
 # pages = reversed(pages)
 # print 'first time'
-print 'Your progress is:'
-print dayssince
-print pages
-print words
+print( 'Your progress is:' )
+print( dayssince )
+print( pages )
+print( words )
 
 # small module to better include flat days
 for i in xrange(len(dayssince) - 1):
@@ -81,8 +81,8 @@ pages     = np.array(pages)
 words     = np.array(words)
 
 if len(dayssince) > 1:
-    print str(pages[0] - pages[1]) + ' pages today!'
-    print str(words[0] - words[1]) + ' words today!'
+    print(str(pages[0] - pages[1]) + ' pages today!')
+    print(str(words[0] - words[1]) + ' words today!')
 
 from matplotlib import rcParams
 # rcParams["font.family"] = "sans-serif"
