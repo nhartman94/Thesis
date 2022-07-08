@@ -1,0 +1,18 @@
+\contentsline {chapter}{Preface}{iv}{}%
+\contentsline {chapter}{Acknowledgments}{v}{}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
+\contentsline {chapter}{\numberline {2}Theoretical motivation}{2}{}%
+\contentsline {chapter}{\numberline {3}LHC}{3}{}%
+\contentsline {chapter}{\numberline {4}ATLAS}{4}{}%
+\contentsline {chapter}{\numberline {5}Event reconstruction}{5}{}%
+\contentsline {chapter}{\numberline {6}b-tagging}{6}{}%
+\contentsline {chapter}{\numberline {7}Statistical techniques}{7}{}%
+\contentsline {chapter}{\numberline {8}Analysis selection}{8}{}%
+\contentsline {chapter}{\numberline {9}Background estimation}{9}{}%
+\contentsline {chapter}{\numberline {10}Results}{10}{}%
+\contentsline {chapter}{\numberline {11}Future directions?}{11}{}%
+\contentsline {chapter}{\numberline {12}Conclusions}{12}{}%
+\contentsline {chapter}{\numberline {A}Reweighting loss function}{13}{}%
+\contentsline {chapter}{\numberline {B}Further statistics fundamentals}{14}{}%
+\contentsline {chapter}{\numberline {C}Gaussian Processes}{15}{}%
+\contentsline {chapter}{\numberline {D}ML for jet $\rightarrow $ parton assignment}{16}{}%
