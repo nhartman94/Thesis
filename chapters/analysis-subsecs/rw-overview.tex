@@ -1,0 +1,110 @@
+\section{Reweighting overview}
+\label{sec:rw-overview}
+
+This technique derives a mapping to get an event-by-event weight from a lower tagged region to a higher tagged region (like a generalized ABCD method).
+
+The lower \Pqb-tagged region consists of events with exactly two \Pqb-tags (which will subsequently be referred to as ``2b\Pqb'' events), and we reweight to match the distributions of events with four or more \Pqb-tags (``4b\Pqb'' events).  For ``2b\Pqb'' events, the leading two non-\Pqb tagged jets are taken for the other HC jets, and these four jets are still paired into HCs with the $\text{min} \Delta R_{jj}^{HC 1}$ pairing algorithm and pass through the rest of the analysis selection.
+
+The reweighting maps are derived in CR 1 (as shown in \hl{Need to cite figure}) since the events in the 4b SR are not observed until the analysis selection is finalized. 
+The reweighting consists of deriving the maps $w(x)$
+
+\begin{equation}
+	p_{4b}(x) = w(x) \cdot p_{2b}(x),
+\end{equation}
+
+where $x$ is a set of features characterizing the kinematics of the event, specified in \Tab{\ref{tab:rw-inputs}}.
+
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+\renewcommand{\arraystretch}{1.2}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{p{10cm} | p{2cm} | p{2cm}  }
+	{Variable description} & {\bfseries ggF} & {\bfseries VBF} \\
+	\hline\hline
+	$\log(\Delta R_1)$: between the closest two HC jets & \checkmark  & \\
+	$\log(\Delta R_2)$ between the other two HC jets &\checkmark  & \\
+	$\log(p_T)$ of the 4th leading HC jet & \checkmark  & \\
+	$\log(p_T)$ of the 2nd leading HC jet & \checkmark  & \\
+	$\left< | HC \eta  | \right >$:  average absolute value of the HC jets $\eta$ & \checkmark  & \checkmark  \\
+	$\log(p_{T,HH})$& \checkmark  & \\
+	$\Delta R_{HH}$  & \checkmark  & \\
+	$\Delta \phi$ between the jets in the leading HC & \checkmark  & \\
+	$\Delta \phi$ between the jets in the subleading HC & \checkmark  & \\
+	$\log(X_{\PW\Pqt})$ & \checkmark & \checkmark  \\
+	Number of jets in the event &  \checkmark  & \\
+	Trigger bucket index  & \checkmark  & \checkmark  \\
+	Year index	& & \checkmark  \\
+	Second smallest $\Delta R$ between the jets in the leading HC (out of the three possible pairings) 	& & \checkmark  \\
+	Maximum di-jet mass out of the possible pairings of  HC jets 	& & \checkmark  \\
+	Minimum di-jet mass out of the possible pairings of HC jets 	& & \checkmark \\
+	Energy of the leading HC	& & \checkmark \\
+	Energy of the subleading HC	& & \checkmark  \\
+	\hline
+	\end{tabular}
+	\caption{\label{tbl:rw-vars} Set of input variables used for the 2\Pqb to 4\Pqb reweighting for the ggF and VBF channels. The variables included in the background estimate are denoted with a checkmark.}
+	\label{tab:rw-inputs}
+\end{table}
+
+% Back to default table spacing
+\renewcommand{\arraystretch}{1}
+
+
+%\textbf{Table from the int note:}
+%\begin{table}[htbp]
+%	\centering
+%	\caption{\label{tbl:rw-vars} Set of input variables used for the 2\Pqb to 4\Pqb reweighting in the 
+%	ggF and VBF channels respectively.}
+%	\begin{tabular}{p{7cm}|p{7cm}}
+%	{\bfseries ggF} & {\bfseries VBF} \\
+%	\hline\hline
+%	\begin{enumerate}
+%		\item $\log(p_T)$ of the 4th leading Higgs candidate jet
+%		\item $\log(p_T)$ of the 2nd leading Higgs candidate jet
+%		\item $\log(\Delta R)$ between the closest two Higgs candidate jets
+%		\item $\log(\Delta R)$ between the other two Higgs candidate jets
+%		\item Average absolute value of Higgs candidate jet $\eta$
+%		\item $\log(p_T)$ of the di-Higgs system
+%		\item $\Delta R$ between the two Higgs candidates
+%		\item $\Delta \phi$ between the jets in the leading Higgs candidate
+%		\item $\Delta \phi$ between the jets in the subleading Higgs candidate
+%		\item $\log(X_{\PW\Pqt})$, where $X_{\PW\Pqt}$ is the variable used for the top veto
+%		\item Number of jets in the event
+%		\item Trigger bucket index as one hot encoder.
+%	\end{enumerate}
+%	&
+%	\begin{enumerate}
+%		\item Maximum di-jet mass out of the possible pairings of the four Higgs candidate jets
+%		\item Minimum di-jet mass out of the possible pairings of the four Higgs candidate jets
+%		\item Energy of the leading Higgs candidate
+%		\item Energy of the subleading Higgs candidate
+%		\item Second smallest $\Delta R$ between the jets in the leading Higgs candidate (out of the three possible pairings for the leading Higgs candidate)
+%		\item $\log(X_{\PW\Pqt})$, where $X_{\PW\Pqt}$ is the variable used for the top veto
+%		\item Average absolute value of Higgs candidate jet $\eta$
+%		\item Trigger bucket index as one hot encoder
+%		\item Year index as one hot encoder (for the years inclusive training)		
+%	\end{enumerate}\\
+%	\end{tabular}
+%\end{table}
+
+
+To enforce positivity of  the weights , we ac NN $Q(x) = \log w(x)$, minimizing the loss function: 
+\begin{equation}
+	\mathcal{L}(Q(x)) = \mathbb{E}_{x\sim p_{2b}} \left[ \exp\left(  \frac{1}{2} Q(x) \right) \right] + \mathbb{E}_{x\sim p_{4b}} \left[ \exp\left(  - \frac{1}{2} Q(x) \right) \right]
+\end{equation}
+
+results in a model learning $Q^*(x) = \log w(x)$ (where the loss function is set up in this way to  are positive numbers using the loss function);
+
+These mappings are derived in a kinematically similar control region (shown as CR 1 in \Fig{\ref{fig:ggF-massplanes-allYrs-dat-4b-preXwt}}). Then an error on this method from this choice of training region is taken by using an alternative control region (CR 2) and using the difference of the CR1 and CR2 predictions as an error bar.
+
+Applying these reweighting maps in the SR gives us a background estimate of the observed data in a blinded SR.
+
+In practice, there is some amount of noisiness due to the initializations of the NNs. To this extent, the NN for each background estimate is retrained 100 times and the average of the weights is taken as the nominal weight.
+Additionally, for each of the NN trainings the CR1 training events have a weight sampled from a Poisson distribution with mean 1 to account for the finite statistics of the training dataset.
+
+Since we use different triggers between each of the years, the ggF background estimate has a different background estimate derived for each of the three years. Since VBF has two orders of magnitude less statistics than ggF, it was not as sensitive to this effect, so instead for VBF the training was done inclusively for the years with the year passed as an extra variable.
+
+For ggF, the background estimates were derived before the \Xwt cut, while for the VBF the trainings were derived after the \Xwt cut.\footnote{We saw for ggF that we had the same performance whether we trained before or after the \Xwt cut.}
+ 
+
+

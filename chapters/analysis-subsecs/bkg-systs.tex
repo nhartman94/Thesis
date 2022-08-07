@@ -1,0 +1,313 @@
+\section{Background systematics}
+\label{sec:bkg-systs}
+
+For our fully data-driven background estimate, we assess several custom background modeling uncertainties: 
+\begin{itemize}
+	\itemsep0em 
+	\item NN optimization \Sect{\ref{subsec:bootstrap}}
+	\item choice of CRs for deriving these reweightings \Sect{\ref{subsec:shape}},
+	\item and (ggF-only) remaining extrapolation uncertainty from testing a reweighting to another (lower) \Pqb-tagged target distribution \Sect{\ref{subsec:syst:3b1fnonclosure}}. 
+\end{itemize}	
+
+We present the tables and plots comparing the relative size of each of these contributions (\Sect{\ref{subsec:bkgUnc-summary}}), and conclude with a description of how we characterize these uncertainties in the profile likelihood fit in \Sect{subsec:bkgUnc-stats}.
+
+
+\subsection{Deep ensembles}
+%\subsection{Statistical Uncertainties and Bootstrapping}
+\label{subsec:bootstrap}
+
+There are two components to the statistical error for the neural network
+background estimate. The first is standard Poisson error of the 2b data in the SR, i.e., a given bin,
+$i$, in the background histogram has value $n_i = \sum\limits_{j\in i} w_j$,
+where $w_j$ is the weight for an event $j$ which falls in bin $i$. Standard
+techniques then result in statistical error $\delta n_i =
+	\sqrt{\sum\limits_{j\in i} w_j^2}$, which reduces to the familiar $\sqrt{N}$
+Poisson error when all $w_j$ are equal to 1.
+
+However, this procedure does not take into account the statistical uncertainty
+on the $w_j$ due to the finite training dataset. Due to the large size
+difference between the 2b and 4b datasets, it is the statistical
+uncertainty due to the 4b training data that dominates that on the
+background. A standard method for estimating this uncertainty is the bootstrap
+resampling technique~\cite{Bootstrap}. Conceptually, a set of statistically
+equivalent sets is constructed by sampling with replacement from the original
+training set. The reweighting network is then trained on each of these
+separately, resulting in a set of statistically equivalent background estimates.
+Each of these sets is below referred to as a replica.
+
+In practice, as the original training set is large, the resampling procedure is
+able to be simplified through the relation $\lim\limits_{n\rightarrow \infty}
+	\operatorname{Binomial}(n, 1/n) = \operatorname{Poisson}(1)$, which dictates that sampling
+with replacement is approximately equivalent to applying a randomly distributed
+integer weight to each event, drawn from a Poisson distribution with a mean of 1.
+
+Though the network configuration itself is the same for each bootstrap training, the
+network initialization is allowed to vary, and this uncertainty
+ It should therefore be noted that the bootstrap
+uncertainties implicitly capture the uncertainty due to this variation in addition to
+the previously mentioned training set variation.
+
+The procedure to calculate the bootstrap uncertainty is as follows: first, each network trained on each bootstrap replica dataset is used
+to produce a histogram in the variable of interest. This results in a set of 
+replica histograms (e.g. for 100 bootstrap replicas, 100 histograms are created). 
+The nominal estimate is mean of bin values across these replica histograms, 
+with errors set by the corresponding standard deviation.
+
+The variation from this bootstrapping procedure is used to assign a bin-by-bin uncertainty
+which is treated as a statistical uncertainty in the fit. 
+
+Figure~\ref{fig:bootstrap-breakdown} demonstrates how an uncertainty envelope is calculated from this procedure by visualizing the \mhh histogram in the Control~Region~1 (where the background estimates are derived) for the 2018 ggF (left) and years inclusive VBF (right) background estimates.
+
+\def\figpath{figures/nr-int-note/systematics/V5/}
+\begin{figure}[ht]
+	\centering
+	\subfloat[Comparison with histogram bin IQR]{\label{fig:bstrap-band-vs-hist-iqr}%
+		\includegraphics[width=0.48\textwidth]{\figpath/spider-ggF-stdev-Unblind-Feb22-2-m-hh-control-18-4b.pdf}
+	}
+	\subfloat[]{\label{fig:bootstrap-breakdown-vbf}
+		\includegraphics[width=0.48\textwidth]{\figpath/spider-VBF-stdev-Unblind-Feb22-2-m-hh-control-all-4b.pdf}
+	}
+	\caption{Illustration of the bootstrap band procedure, shown as a ratio to the nominal estimate. 
+	Each grey line is from the \mhh prediction for a single bootstrap training, and the solid red line shows the standard deviation of histograms for the 2017 ggF background estimate (left) and VBF years inclusive background estimate (right). 
+		}
+	\label{fig:bootstrap-breakdown}
+\end{figure}
+
+\FloatBarrier
+\clearpage
+
+\subsection{Choice of control region}
+\label{subsec:shape}
+
+\def\figsversion{V3}
+To account for the systematic bias associated with deriving the reweighting function
+in CR1, an alternative background
+model is derived in CR2.
+To aid in deriving an uncertainty to cover this bias, the Signal Region is split into quadrants - four sectors of approximately equal area - where the angle of alignment is set to match the quadrants that define the control regions, CR1 and CR2. The four SR quadrants are named for their relative positions in the Higgs Candidate mass plane, where Q is short for quadrant - Q$_\text{N}$ (north), Q$_\text{S}$ (south), Q$_\text{E}$ (east) and Q$_\text{W}$ (west), and shown in \Fig{\ref{fig:quadNP}}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.48\textwidth]{{figures/nr-int-note/systematics/V3/quadNP_viz.pdf}}		
+    \caption{SR quadrants chosen to derive the four background variation nuisance parameters.}
+    \label{fig:quadNP}
+\end{figure}
+
+
+The nominal background estimate is derived by applying weights derived in CR1 to all four SR quadrants. Four alternative background estimates are derived by applying weights derived in CR1 to three of the SR quadrants and weights derived in the CR2 to the one remaining SR quadrant. For example, one alternative background estimate is derived by applying CR1-derived weights to Q$_\text{S}$, Q$_\text{E}$ and Q$_\text{W}$, and CR2-derived weights to Q$_\text{N}$. 
+The procedure is to reduce the constraints of a single nuisance parameter (NP) if we were to take the whole CR2 weights as a single uncertainty. It constraint was seen in previous 36~\ifb paper and the resonant paper, where certain NP decomposition was also applied.
+As we believe the QCD background contains multiple sources, this choice of splitting NPs is to introduce more degrees of freedom to the fit.
+This can be done in various ways.
+The current way of splitting to four quadrants aligns well with the CR1 and CR2 region definitions, therefore is deemed to be a natural choice.
+
+The difference between the baseline and alternative estimates is used to define a shape uncertainty on the \mhh
+spectrum, which is made two-sided by symmetrizing the difference around
+the baseline. Note that both normalization and shape differences are taken into considered.
+
+These SR quadrants align with the four sectors of CR1 and CR2 to give these shape systematics the flexibility to naturally follow the kinematic similarity of the adjacent CRs.
+The symmetrized difference between the nominal and alternative background estimates are shown for the ggF discriminant for each year in \Figrange{\ref{fig:shapesyst-var-unrolled-16-4b}}{\ref{fig:shapesyst-var-unrolled-18-4b}}. 
+Complementary comparisons of the nominal and alternative background estimates for the VBF selection are included in Appendix~\ref{app:vbf_shape_systematics}. 
+
+\def\figsversion{V5}
+\def\NNTtag{UNB-MAR21-shuffled}
+\def\systID{SR-quads-rot-Xhh-unrolled-syst-m-hh-Signal-Region-NN}
+\def\bcat{4b}
+
+%\def\figpath{figures/nr-int-note/systematics/V5/}
+
+\foreach \yr in {16, 17, 18}{
+	\begin{figure}[ht]
+		\centering
+		\subfloat%[Q$_\text{N}$]
+		{
+			\includegraphics[width=\textwidth]{\figpath\NNTtag-SR-Q1-\systID-\yr-\bcat}
+		} \\
+		\subfloat%[Q$_\text{S}$]
+		{
+			\includegraphics[width=\textwidth]{\figpath\NNTtag-SR-Q3-\systID-\yr-\bcat}
+		} \\
+		\subfloat%[Q$_\text{E}$]
+		{
+			\includegraphics[width=\textwidth]{\figpath\NNTtag-SR-Q4-\systID-\yr-\bcat}
+		} \\		
+		\subfloat%[Q$_\text{W}$]
+		{
+			\includegraphics[width=\textwidth]{\figpath\NNTtag-SR-Q2-\systID-\yr-\bcat}
+		}
+		\caption{Example of variation in the SR NP quadrants for the 20\yr~ggF~discriminant.}
+		\label{fig:shapesyst-var-unrolled-\yr-\bcat}
+	\end{figure}
+}
+
+
+\FloatBarrier
+\clearpage
+
+\subsection{3b1f non-closure uncertainty}
+\label{subsec:syst:3b1fnonclosure}
+
+The 3b1f region is defined such that it contains events with three jets that were b-tagged at the 77\% working point, but that all other jets failed to be b-tagged at even the loosest 85\% working point.
+The fourth jet required to reconstruct the di-Higgs is taken as the highest \pt non-b-tagged jet.
+The standard methodology for deriving the background estimation (\Sect{\ref{bkg-reweight-method}}) is performed on this region, with 4b events replaced by 3b1f.
+The background prediction uncertainties include 2b stat error, bootstrap (\Sect{\ref{sec:subsec:bootstrap}}), and CR1 versus CR2 shape uncertainties (\Sect{\ref{sec:subsec:shape}}).
+Detailed studies can be found in \App{\ref{app:3b1f:val}}.
+A small deviation between the reweighted 2b and the 3b1f data distributions in the SR was found in the ggF channel but not in the VBF channel.
+An additional uncertainty due to the 3b1f non-closure is derived for the ggF channel to cover this deviation.
+
+The uncertainty is derived as follows:
+In each of the analysis categories (\Sect{\ref{subsec:cat-motivation}}), the ratio of the 3b1f and the reweighted 2b \mhh distributions is computed using the binning described in \Tab{\ref{tab:binning-hyperparameters}}.
+The ratio is compared to unity bin by bin.
+If the difference is not covered by the quadratic sum of the background prediction uncertainties and the 3b1f data statistical uncertainty in that bin, the residual is taken to form a template.
+To reduce the statistical fluctuations between bins, the template is smoothed by averaging each bin with its two neighboring bins.
+The smoothed template is used as a non-closure uncertainty in 4b.
+
+\FloatBarrier
+\clearpage
+\subsubsection{Summary of Background Modeling Uncertainties}
+\label{subsec:bkgUnc-summary}
+
+\def\NNTtag{NR-MAR22-unblind}
+
+Relative magnitudes of the uncertainties for
+each year are shown in \Tab{\ref{tbl:ggF-errs-ALL}} for ggF and \Tab{\ref{tbl:VBF-errs-ALL}} for VBF along with an estimate of the impact of the statistics of 4b
+data in the signal region on the total error. 
+
+\input{tables/\NNTtag-VBF-error-table-ALL.tex}
+\input{tables/\NNTtag-ggF-error-table-ALL.tex}
+
+A visualization of the magnitudes of these templates for the ggF channels is shown in \Fig{\ref{fig:bkgRelErr-ggF-4b}} and VBF in \Fig{ref{fig:bkgRelErr-VBF-4b}}.
+The statistical error dominates for high \mhh while the shape systematic from the difference in the CR1 and CR2 contributes more in the moderate \mhh region that drives our analysis sensitivity.
+Although the stat error (from the limited 2b data statistics) is negligible relative to the bootstrap error in the bulk of the distribution, it becomes relevant in the high \mhh tail. 
+The final statistical uncertainty used for the limit setting is therefore the sum (in quadrature) of these two components. 
+
+\def\NNTtag{NR-UNBLIND-FEB22-2}
+
+\begin{figure}[ht]
+	\centering
+	\subfloat[\bcat \ 2016 ggF]{
+		\includegraphics[width=\textwidth]{\figpath\NNTtag-ggF-relError-16-4b}
+	} \\
+	\subfloat[\bcat \ 2017 ggF]{
+			\includegraphics[width=\textwidth]{\figpath\NNTtag-ggF-relError-17-4b}
+	} \\
+	\subfloat[\bcat \ 2018 ggF]{
+			\includegraphics[width=\textwidth]{\figpath\NNTtag-ggF-relError-18-4b}
+	}
+	\caption{Relative error contributions of the background for the \bcat~ggF~discriminant.}
+	\label{fig:bkgRelErr-ggF-4b}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering
+		\includegraphics[width=0.45\textwidth]{\figpath\NNTtag-VBF-relError-all-4b-dEta_1.pdf}
+		\includegraphics[width=0.45\textwidth]{\figpath\NNTtag-VBF-relError-all-4b-dEta_2.pdf}
+	\caption{Relative error contributions of the background for the \bcat~VBF~discriminant.}
+	\label{fig:bkgRelErr-VBF-4b}
+\end{figure}
+
+\subsection{Choice of background systematic parametrization}
+\label{subsec:bkgUnc-stats}
+
+OK - I made these plots... I just need to \emph{pop} them in from somewhere else!
+
+% I'm not sure if I wrote this or not - I don't think I did tbh
+%The signal extraction fit is performed in the \mhh variable, due to its separation power between signal and background, but also between different signal hypotheses (such as different $\kappa_\lambda$ signals). 
+%The fit is performed with binned histograms, with the binning defined in \Sect{\ref{subsec:cat-motivation}}, in different categories, defined in \Sect{\ref{subsubsec:ggF-cats}} for the ggF selection and in \Sect{\ref{subsubsec:VBF-cats}} for VBF. 
+%
+%\textbf{For the ggF channel, the fit is performed for each one of the three data taking years separately.} This choice is informed by the background estimate strategy, where the neural network is trained, and shape uncertainties are assessed, separately per year. This choice leads to lower background estimate uncertainties with respect to an all-years together training, with a similar nominal estimate between both options. This is due to large difference in kinematics between the years cause by different trigger thresholds (on both jet $p_T$ and online \Pqb-tagging). On the other hand, \textbf{the years are treated inclusively for the VBF channel}, both on the background estimate step and on the fitting step. The main performance bottleneck for the VBF selection background estimate is the available statistics to train the neural network. In this case, statistics are more important than the different kinematics between the years. Therefore, obtaining the background inclusively in years is preferred.
+
+%\subsection{Background Shape Nuisance Parameter Correlation Scheme}
+%\label{subsec:stats-corr-scheme}
+
+The number of categories, fits and all possible background nuisance parameters are described in table \ref{stat:fit-table}, informed by the fitting strategy described in the previous sub-section.  
+For both VBF and ggF channels, the shape and normalization uncertainties for each category are obtained separately by comparing the CR1 and CR2 models after each category selection.
+
+\begin{table}[!htbp]
+    \centering
+    \begin{tabular}{c|c|c}
+{} & ggF channel & VBF channel \\ \hline
+Categories & \begin{tabular}[c]{@{}c@{}}3 years\\ $\times$ 3 $|\Delta\eta_{HH}|$ \\ $\times$ 2 $X_{HH}$ \\ = 18 categories\end{tabular} & 2 $|\Delta\eta_{HH}|$ categories \\ \hline
+\begin{tabular}[c]{@{}c@{}}Background shape\\nuisance parameters\end{tabular} & \begin{tabular}[c]{@{}c@{}}3 years \\  $\times$ $(Q_{\text{N}}, Q_{\text{E}}, Q_{\text{S}}, Q_{\text{W}})$ \\  = 12 \end{tabular} & \begin{tabular}[c]{@{}c@{}} $(Q_{\text{N}}, Q_{\text{E}}, Q_{\text{S}}, Q_{\text{W}})$ \\  = 4\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}c@{}}3b1f non-closure\\nuisance parameters\end{tabular} & 18 (1 per category) & 0 \\
+\end{tabular}
+    \caption{Summary of categorization strategy and background-related nuisance parameters in ggF and VBF analyses.}
+\label{stat:fit-table}
+\end{table}
+
+These nuisance parameters are not necessarily completely uncorrelated, and a choice on the correlation scheme must be made to perform the fit. 
+The main argument for correlating the background shape nuisance parameters across kinematic regions is due to the neural network reweighting. 
+The reweighting is trained inclusively with respect to kinematic categories, per year (for the ggF channel) or for all years together (for VBF). 
+Possible mismodelings occuring due to the neural network's performance, or, more importantly, its ability to interpolate into the signal region, will therefore have the same source. 
+For the VBF channel, one step ahead is taken, and the fit is performed inclusively for all the years for this reason. 
+This approach, however, was observed to be detrimental to the ggF background modeling performance, due to the kinematic differences between the years, and is not done. 
+
+Another important indication that these nuisance parameters should be correlated across kinematic regions is the relative impact they have in the \mhh fitting variable. 
+This can be seen on Figure \ref{fig:sr-np-impact}, which shows the nuisance parameter relative variations within each quadrant and each year of the ggF analysis. 
+Most variations have very similar impacts on \mhh , which corroborates the hypothesis of correlated variations. 
+
+\def\figpath{figures/nr-int-note/unblind_results/V5/}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.32\textwidth]{\figpath/SR_Q1_16}
+	\includegraphics[width=0.32\textwidth]{\figpath/SR_Q1_17}
+	\includegraphics[width=0.32\textwidth]{\figpath/SR_Q1_18}
+	\\
+	\includegraphics[width=0.32\textwidth]{\figpath/SR_Q2_16}
+	\includegraphics[width=0.32\textwidth]{\figpath/SR_Q2_17}
+	\includegraphics[width=0.32\textwidth]{\figpath/SR_Q2_18}
+	\\
+	\includegraphics[width=0.32\textwidth]{\figpath/SR_Q3_16}
+	\includegraphics[width=0.32\textwidth]{\figpath/SR_Q3_17}
+	\includegraphics[width=0.32\textwidth]{\figpath/SR_Q3_18}
+	\\
+	\includegraphics[width=0.32\textwidth]{\figpath/SR_Q4_16}
+	\includegraphics[width=0.32\textwidth]{\figpath/SR_Q4_17}
+	\includegraphics[width=0.32\textwidth]{\figpath/SR_Q4_18}
+	\caption{Impact of background shape nuisance parameter variation on \mhh in different kinematic categories for the ggF channel. Each column is a different year for the ggF channel templates while the rows show the SR NP quadrants.}	 
+	\label{fig:sr-np-impact}
+\end{figure}
+
+\FloatBarrier
+
+Given the arguments above, we choose to correlate the background shape nuisance parameters across kinematic categories, within a year and each quadrant. 
+Therefore, the number of free nuisance parameters in the ggF fit related to the background shape is reduced from 72 (3 years $\times$ 6 categories $\times$ $ (Q_{\text{N}}, Q_{\text{E}}, Q_{\text{S}}, Q_{\text{W}})$)  to 12 (3 years $\times (Q_{\text{N}}, Q_{\text{E}}, Q_{\text{S}}, Q_{\text{W}})$). 
+
+For completeness, we also show the templates by category with the different quadrant contributions overlaid in \Fig{\ref{fig:sr-np-impact-by-cat}}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_1_Xhh_1_16}
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_1_Xhh_1_17}
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_1_Xhh_1_18}
+	\\
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_2_Xhh_1_16}
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_2_Xhh_1_17}
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_2_Xhh_1_18}
+	\\
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_3_Xhh_1_16}
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_3_Xhh_1_17}
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_3_Xhh_1_18}
+	\\
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_1_Xhh_2_16}
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_1_Xhh_2_17}
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_1_Xhh_2_18}
+	\\
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_2_Xhh_2_16}
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_2_Xhh_2_17}
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_2_Xhh_2_18}
+	\\
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_3_Xhh_2_16}
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_3_Xhh_2_17}
+	\includegraphics[width=0.3\textwidth]{\figpath/dEta_3_Xhh_2_18}
+	\caption{Impact of background shape nuisance parameter variation on \mhh in different kinematic categories for the ggF channel. Each column is a different years of the ggF channel templates while the rows show each category with the SR NP quadrants overlaid.}	 
+	\label{fig:sr-np-impact-by-cat}
+\end{figure}
+
+
+
+The initial analysis unblinding occurred with a different nuisance parameter correlation scheme, where all parameters were treated as uncorrelated systematics.
+This choice was made due to the lack of coherent variations in the different validation regions in the analysis, particularly the 3b1f region. Therefore, we believed giving flexibility for the fit to vary in different directions in different categories to be the best option. 
+In addition, it was observed that the expected SR limits with the uncorrelated were more performant across different $\kappa_\lambda$ hypotheses. 
+Results pertaining to this unblinding, which show clear indication and preference for the correlated scheme described above, can be seen in \App{\ref{app:unb-studies}}. This appendix also collects extensive studies on understanding these results.
+
+\FloatBarrier

@@ -1,0 +1,183 @@
+\label{cutflows-tables}
+
+In this section is a breakdown of the yields at the different steps in the analysis event selection (a \textit{cutflow}) for data and important Monte Carlo simulation samples.
+
+Data (2016-18, 126.1 \ifb):
+
+\begin{itemize}
+	\item Table \ref{tab:data_ggF_chan_4tag_cutflow}: 4b events in the ggF channel.
+	\item Table \ref{tab:data_ggF_chan_2tag_cutflow}: 2b events in the ggF channel.
+	\item Table \ref{tab:data_VBF_chan_4tag_cutflow}: 4b events in the VBF channel.
+	\item Table \ref{tab:data_VBF_chan_2tag_cutflow}: 2b events in the VBF channel.
+\end{itemize}
+
+ggF \HH MC simulation (normalized to 126.1 \ifb):
+\begin{itemize}
+	\item Tables \ref{tab:mc_ggF_sm_ggF_chan_4tag_cutflow}: 4b events in the ggF channel for SM ggF \HH signal.
+	\item Tables \ref{tab:mc_ggF_k10_ggF_chan_4tag_cutflow}: 4b events in the ggF channel for $\kappa_{\lambda} = 10$ ggF \HH signal.
+	\item Tables \ref{tab:mc_ggF_sm_VBF_chan_4tag_cutflow}: 4b events in the VBF channel for SM ggF \HH signal.
+	\item Tables \ref{tab:mc_ggF_k10_VBF_chan_4tag_cutflow}: 4b events in the VBF channel for $\kappa_{\lambda} = 10$ ggF \HH signal.
+\end{itemize}
+
+VBF \HH MC simulation (normalized to 126.1 \ifb):
+
+\begin{itemize}
+	\item Tables \ref{tab:mc_VBF_sm_VBF_chan_4tag_cutflow}: 4b events in the VBF channel for SM VBF \HH signal.
+	\item Tables \ref{tab:mc_VBF_k10_VBF_chan_4tag_cutflow}: 4b events in the VBF channel for $\kappa_{\lambda} = 10$ VBF \HH signal.
+	\item Tables \ref{tab:mc_VBF_k2v0_VBF_chan_4tag_cutflow}: 4b events in the VBF channel for $\kappa_{2V} = 0$ VBF \HH signal.
+	\item Tables \ref{tab:mc_VBF_sm_ggF_chan_4tag_cutflow}: 4b events in the ggF channel for SM VBF \HH signal.
+	\item Tables \ref{tab:mc_VBF_k10_ggF_chan_4tag_cutflow}: 4b events in the ggF channel for $\kappa_{\lambda} = 10$ VBF \HH signal.
+	\item Tables \ref{tab:mc_VBF_k2v0_ggF_chan_4tag_cutflow}: 4b events in the ggF channel for $\kappa_{2V} = 0$ VBF \HH signal.
+\end{itemize}
+
+\ttbar MC simulation (normalized to 126.1 \ifb):
+
+\begin{itemize}
+	\item Table \ref{tab:ttbar_mc_ttbar_nonallhad_ggF_chan_4tag_cutflow}: 4b events in the ggF channel in \ttbar MC simulation for the non-all hadronic decay mode.
+	\item Table \ref{tab:ttbar_mc_ttbar_allhad_ggF_chan_4tag_cutflow}: 4b events in the ggF channel in \ttbar MC simulation for the all hadronic decay mode.
+	\item Table \ref{tab:ttbar_mc_ttbar_nonallhad_VBF_chan_4tag_cutflow}: 4b events in the VBF channel in \ttbar MC simulation for the non-all hadronic decay mode.
+	\item Table \ref{tab:ttbar_mc_ttbar_allhad_VBF_chan_4tag_cutflow}: 4b events in the VBF channel in \ttbar MC simulation for the all hadronic decay mode.
+\end{itemize}
+
+% Tables:
+\def\tablesversion{V2}
+%data
+\input{tables/cutflows/\tablesversion/data_ggF_chan_cutflow.tex}
+\input{tables/cutflows/\tablesversion/data_VBF_chan_cutflow.tex}
+% ggF sig
+\input{tables/cutflows/\tablesversion/mc_ggF_sig_ggF_chan_cutflow.tex}
+\input{tables/cutflows/\tablesversion/mc_ggF_sig_VBF_chan_cutflow.tex}
+% VBF sig
+\input{tables/cutflows/\tablesversion/mc_VBF_sig_ggF_chan_cutflow.tex}
+\input{tables/cutflows/\tablesversion/mc_VBF_sig_VBF_chan_cutflow.tex}
+% ttbar
+\input{tables/cutflows/\tablesversion/ttbar_mc_ggF_chan_cutflow.tex}
+\input{tables/cutflows/\tablesversion/ttbar_mc_VBF_chan_cutflow.tex}
+
+%**598: The ttbar contamination numbers should also be shown in the cutflow section if possible. We should show it before and after the Xwt cut in the SR for 2b, 4b for ggF and VBF**
+% This is in section 7.
+
+\clearpage
+
+\subsection{Signal Yields}
+\label{subsec:sigYields}
+
+Tables \ref{tab:ggF_4SR_yields} and \ref{tab:VBF_4SR_yields} show the 4b SR yields for ggF and VBF \HH MC simulation in the ggF and VBF SR. Approximately 1--2\% of the overall ggF yield for the various coupling points shown falls in the VBF SR, demonstrating that the additional of the VBF SR does very little to dilute the sensitivity to ggF. A far larger percentage of the overall VBF yield falls in the ggF SR, but the definition of the VBF SR was optimized to maximize significance, resulting in tight cuts that do reject a significant amount signal but reject far more background.
+
+\begin{table}[h]
+    \centering
+    \caption{Yields in the 4b Signal Region for coupling points of interest for ggF HH Monte Carlo simulation normalized to 126.1\ifb.}
+    \label{tab:ggF_4SR_yields}
+    \begin{tabular}{lcc}
+        \toprule
+        Coupling Point & ggF Channel Yield & VBF Channel Yield \\
+        \midrule
+        {SM} & {35.2} & {0.561} \\
+        {$\kappa_{\lambda} = 10$} & {237} & {3.9} \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+      
+\begin{table}[h]
+    \centering
+    \caption{Yields in the 4b Signal Region for coupling points of interest for VBF HH Monte Carlo simulation normalized to 126.1\ifb.}
+	\label{tab:VBF_4SR_yields}
+    \begin{tabular}{lcc}
+        \toprule
+        Coupling Point & ggF Channel Yield & VBF Channel Yield \\
+        \midrule
+        {SM} & {0.276} & {0.371} \\
+        {$\kappa_{\lambda} = 10$} & {30.4} & {16.4} \\
+        {$\kappa_{2V} = 0$} & {25.2} & {18.7} \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\clearpage
+
+\subsection{Non-resonant signal acceptance versus \kl and \kvv}
+\label{Non-resonant-signal-acceptance-versus-kl}
+\Figrange{\ref{fig:syield_signif_kl}}{\ref{fig:syield_signif_k2v}} show the variation in the 4b SR signal yields and significance ($S/\sqrt{B}$) versus \kvv and \kl respectively. Even though there is more VBF signal in the ggF SR than the VBF SR for the majority of modifier values, the significance is far larger in the VBF SR.
+
+\begin{figure}[h]
+	\centering
+	\subfloat[Signal yield versus $\kappa_{\lambda}$]{
+		\includegraphics[width=0.48\textwidth]{figures/nr-int-note/selection/V2/signal_yield_versus_kl.png}
+		\label{fig:sig_yield_kl}
+	}
+	\subfloat[Significance versus $\kappa_{\lambda}$]{
+		\includegraphics[width=0.48\textwidth]{figures/nr-int-note/selection/V2/s_over_sqrtb_versus_kl.png}
+		\label{fig:signif_kl}
+	}
+	\caption{4b Signal Region yield and statistical significance of the VBF and ggF Monte Carlo simulation in the VBF and ggF SRs versus $\kappa_{\lambda}$.
+	In the legend, "channel" means SR.
+	}
+	\label{fig:syield_signif_kl}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\subfloat[Signal yield versus $\kappa_{2V}$]{
+		\includegraphics[width=0.48\textwidth]{figures/nr-int-note/selection/V2/signal_yield_versus_k2v.png}
+		\label{fig:sig_yield_k2v}
+	}
+	\subfloat[Significance versus $\kappa_{2V}$]{
+		\includegraphics[width=0.48\textwidth]{figures/nr-int-note/selection/V2/s_over_sqrtb_versus_k2v.png}
+		\label{fig:signif_k2v}
+	}
+	\caption{4b Signal Region yield and statistical significance of the VBF Monte Carlo simulation in the VBF and ggF SRs versus $\kappa_{2V}$.
+	In the legend, "channel" means SR.
+	}
+	\label{fig:syield_signif_k2v}
+\end{figure}
+
+ \Fig{\ref{fig:accXeff}} shows the corresponding acceptance times efficiency in 1d as a function of the \kl and \kvv variations. 
+Then \Fig{\ref{fig:eff-2d}} shows the corresponding acceptance times efficiency in 2d as a function of the \kl and \kvv variations. 
+
+\begin{figure}[h]
+	\centering
+	\subfloat[Acceptance times efficiency versus \kl]{
+		\includegraphics[width=0.48\textwidth]{figures/nr-int-note/selection/V3/accXeff_kl}
+		\label{fig:accXeff_kl}
+	}
+	\subfloat[Acceptance times efficiency \kvv]{
+		\includegraphics[width=0.48\textwidth]{figures/nr-int-note/selection/V3/accXeff_k2V}
+		\label{fig:accXeff_k2V}
+	}
+	\caption{4b Signal Region acceptance times efficiency versus \kl and \kvv.}
+	\label{fig:accXeff}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\subfloat[VBF selection]{
+	    \includegraphics[width=0.7\textwidth]{figures/nr-int-note/selection/V3/VBFefficiency2D-vbf-MC-Signal-Region-all-4b}
+	}
+	\subfloat[ggF selection]{
+	    \includegraphics[width=0.7\textwidth]{figures/nr-int-note/selection/V3/VBFefficiency2D-ggf-MC-Signal-Region-all-4b}
+	}
+	\caption{4b Signal Region acceptance times efficiency for the VBF SM Monte Carlo simulation in the VBF or ggF selection in \kvv-\kl plane.}
+	\label{fig:eff-2d}
+\end{figure}
+
+Finally, to visualize our analysis selection as we propagate through the cutflow chain, the plots for acceptance times efficiency as we propagate through the cutflow acceptance are shown in \Fig{\ref{fig:accXeff-cutflow}}. Here we show the categories driving our analysis sensitivity the ggF signal in the ggF channel and the VBF signals in the VBF channel.  In \App{\ref{app:evt-sel}}, \Fig{\ref{fig:accXeff-cutflow-app}} shows the ggF production $\kl$ cutflows in the VBF channel and the VBF production cutflows for the ggF channel.
+
+\begin{figure}[h]
+	\centering
+	\subfloat[ggF MC: \kl variation]{
+		\includegraphics[width=0.48\textwidth]{figures/nr-int-note/selection/V3/acc_x_eff_ggF_kl_ggF_chan_log}
+		\label{fig:accXeff_ggF_kl-ggF-sel-cutflow}
+	}
+	\subfloat[VBF MC: \kl variation]{
+		\includegraphics[width=0.48\textwidth]{figures/nr-int-note/selection/V3/acc_x_eff_VBF_kl_VBF_chan_log}
+		\label{fig:accXeff_VBF_kl-VBF-sel-cutflow}
+	} \\
+	\subfloat[VBF MC: \kvv variation]{
+		\includegraphics[width=0.48\textwidth]{figures/nr-int-note/selection/V3/acc_x_eff_VBF_k2v_VBF_chan_log}
+		\label{fig:accXeff_k2V-cutflow}
+	}
+	\caption{4b Signal Region acceptance times efficiency.}
+	\label{fig:accXeff-cutflow}
+\end{figure}
+

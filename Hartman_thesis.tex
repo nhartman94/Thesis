@@ -1,0 +1,101 @@
+% Stanford University PhD thesis style -- modifications to the report style
+% This is unofficial so you should always double check against the
+% Registrar's office rules
+% See http://library.stanford.edu/research/bibliography-management/latex-and-bibtex
+% 
+% Example of use below
+% See the suthesis-2e.sty file for documentation
+%
+\documentclass{report}
+\usepackage{suthesis-2e}
+\usepackage{atlas-defs}
+\usepackage{useful}
+\usepackage{amsfonts} 
+
+\usepackage{tabularx}
+
+
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{adjustbox}
+
+\dept{Physics}
+
+%%%%%%%%%%%%%%%%%%%%
+% Some latex setup
+%%%%%%%%%%%%%%%%%%%%
+\newcommand*{\ATLASLATEXPATH}{latex/}
+
+\usepackage[hepparticle,hepprocess]{\ATLASLATEXPATH atlasphysics}
+
+\usepackage[biblatex=true,backend=bibtex]{\ATLASLATEXPATH atlaspackage}
+\usepackage{\ATLASLATEXPATH atlasbiblatex}
+\usepackage{\ATLASLATEXPATH atlasphysics}
+
+% Files with references for use with biblatex.
+% Note that biber gives an error if it finds empty bib files.
+\addbibresource{thesis.bib}
+\addbibresource{bib/ATLAS.bib}
+\addbibresource{bib/CMS.bib}
+\addbibresource{bib/ConfNotes.bib}
+\addbibresource{bib/PubNotes.bib}
+\addbibresource{bib/ATLAS-useful.bib}
+
+% Some colors we're using for templates for fonts that it's fun to match for the note
+\definecolor{hh:darkpink}{HTML}{f2385a}
+\definecolor{hh:medturquoise}{HTML}{36b1bf}
+\definecolor{hh:darkblue}{HTML}{343844}
+\definecolor{hh:darkgreen}{HTML}{125125}
+\definecolor{hdbs:outrageousorange}{HTML}{fa7e61}
+\definecolor{rebeccapurple}{HTML}{663399}
+
+
+\begin{document}
+
+\title{Two b, and then another two b... but how to MLearn it bbbbest -- that's the question.}
+\author{Nicole Hartman}
+\principaladviser{Su Dong}
+\firstreader{Michael Kagan}
+\secondreader{Patricia Burchat}
+\thirdreader{Michael Peskin} 
+ 
+%\beforepreface
+%
+%\input{Preface}
+%\input{Acknowledgements}
+%
+%\afterpreface
+%
+%\input{chapters/intro}
+%\input{chapters/theory}
+%\input{chapters/LHC}
+%\input{chapters/ATLAS}
+%
+%\input{chapters/eventReco}
+%\input{chapters/ftag}
+%
+%\chapter{Statistical techniques}
+%
+%\input{chapters/hh-phys}
+%\input{chapters/Analysis-selection}
+\input{chapters/bkg-est}
+
+%\input{chapters/results}
+%\chapter{Conditional generative models for data-driven background modeling}
+%
+%\input{chapters/conclusion}
+%
+%\appendix
+%
+%\chapter{Tracking optimizations impact on flavor tagging}
+%\chapter{Reweighting loss function}
+%\chapter{Further statistics fundamentals}
+%\chapter{Gaussian Processes}
+%\chapter{ML for jet $\rightarrow$ parton assignment}
+
+
+...
+\bibliographystyle{plain}
+\bibliography{mybib}
+\end{document}

@@ -1,0 +1,116 @@
+\section{Validation plots}
+\label{sec:bkg-val-plots}
+
+What might be good to include here?
+\begin{itemize}
+	\item Let's include a \emph{few} key variables for both ggF and VBF (?)
+	\item And also the unrolled plots!!
+\end{itemize}
+
+\subsection{Marginal distributions}
+
+\def\NNTtag{NR-UNBLIND-FEB22-2} % crypto-fullStat2b-stdBS-2 NR-MAY21-crypto
+\def\weightlabel{NN}
+\def\norwlabel{no-rw}
+\def\regionID{1}
+
+%\def\figsversion{V3/plots-bkg-\yr-\breg}
+%\def\figsversion{V6}
+%\def\secforfig{background}
+
+\def\suffix{inclusive}
+\def\region{Control-Region-\regionID}
+
+\def\figpath{figures/nr-int-note/background/V6/}
+
+\def\yr{18}
+\def\breg{4b}
+
+\begin{figure}[ht]
+    \centering
+        \subfloat{\label{fig:dRjj1-\region\yr-\breg-norw}%
+            \includegraphics[width=0.48\textwidth]{\figpath\NNTtag-dRjj-1-\region-\norwlabel-\yr-\breg\suffix.pdf}
+    }   
+    \subfloat{\label{fig:dRjj1-\region\yr-\breg}%
+            \includegraphics[width=0.48\textwidth]{\figpath\NNTtag-dRjj-1-\region-\weightlabel-\yr-\breg\suffix.pdf}
+    }   \\
+    \subfloat{\label{fig:dRjj2-\region\yr-\breg-norw}%
+            \includegraphics[width=0.48\textwidth]{\figpath\NNTtag-dRjj-2-\region-\norwlabel-\yr-\breg\suffix.pdf}
+    }   
+    \subfloat{\label{fig:dRjj2-\region\yr-\breg}%
+            \includegraphics[width=0.48\textwidth]{\figpath\NNTtag-dRjj-2-\region-\weightlabel-\yr-\breg\suffix.pdf}
+    }   \\
+    \subfloat[Before Reweighting]{\label{fig:mhh-\region\yr-\breg-norw}%
+            \includegraphics[width=0.48\textwidth]{\figpath\NNTtag-m-hh-\region-\norwlabel-\yr-\breg\suffix.pdf}
+    }   
+    \subfloat[After Reweighting]{\label{fig:mhh-\region\yr-\breg}%
+            \includegraphics[width=0.48\textwidth]{\figpath\NNTtag-m-hh-\region-\weightlabel-\yr-\breg\suffix.pdf}
+    }
+    \caption{Distributions of $\Delta R$ between the closest Higgs Candidate jets, $\Delta R$ between the other two (training variables) and the mass of the di-Higgs system (non-training variable) before and after CR~\regionID\space derived reweighting for the 20\yr\space Control~Region~\regionID.}
+    \label{fig:\region\yr-\breg-8}
+\end{figure}
+
+
+VBF plots \ldots
+
+\def\yr{all}
+
+
+
+\begin{figure}[ht]
+    \centering
+     \subfloat[Before Reweighting]{\label{fig:Xwt-\region\yr-\breg-norw}%
+            \includegraphics[width=0.48\textwidth]{\figpath/VBF/\NNTtag-X-wt-tag-\region-\norwlabel-\yr-\breg\suffix.pdf}
+    }
+    \subfloat[After Reweighting]{\label{fig:Xwt-\region\yr-\breg}%
+            \includegraphics[width=0.48\textwidth]{\figpath/VBF/\NNTtag-X-wt-tag-\region-\weightlabel-\yr-\breg\suffix.pdf}
+    } \\
+    \subfloat[Before Reweighting]{\label{fig:pairing-score-2-\region\yr-\breg-norw}%
+            \includegraphics[width=0.48\textwidth]{\figpath/VBF/\NNTtag-pairing-score-2-\region-\norwlabel-\yr-\breg\suffix.pdf}
+    }
+    \subfloat[After Reweighting]{\label{fig:pairing-score-2-\region\yr-\breg}%
+            \includegraphics[width=0.48\textwidth]{\figpath/VBF/\NNTtag-pairing-score-2-\region-\weightlabel-\yr-\breg\suffix.pdf}
+    } \\
+    \subfloat[Before Reweighting]{\label{fig:mhh-\region\yr-\breg-norw}%
+            \includegraphics[width=0.48\textwidth]{\figpath/VBF/\NNTtag-m-hh-\region-\norwlabel-\yr-\breg\suffix.pdf}
+    }   
+    \subfloat[After Reweighting]{\label{fig:mhh-\region\yr-\breg}%
+            \includegraphics[width=0.48\textwidth]{\figpath/VBF/\NNTtag-m-hh-\region-\weightlabel-\yr-\breg\suffix.pdf}
+    }
+    \caption{Distributions of  the top veto variable, $X_{\PW\Pqt}$, the second smallest $\Delta R$ between the jets in the leading candidate (training variables) and the mass of the leading and subleading Higgs candidates and of the di-Higgs system (non-training variable) before and after CR~\regionID\space derived reweighting for the all years inclusive Control~Region~\regionID.}
+    \label{fig:\region\yr-\breg-VBF}
+\end{figure}
+
+
+
+\subsection{Validation plots in CR1 in categories}
+\label{sec:cats-CR1-validation}
+
+% SCRIPT: hh4b-plots/notebooks/category-validate.sh
+
+Background modeling in the CR1 and CR2 regions are checked for the ggF and VBF channels.
+\Fig{\ref{fig:CR1-unroll-18}} shows the CR1 distributions for the three channels, taking 2018 for ggF as representatives.
+% The background estimates for the categorization variables (\deta and \Xhh) feature in the bkg est section
+The ggF plots for the other years can be found in \App{\ref{app:sec:cats-CR2-validation}}, as well as the same set of plots in CR2.
+
+
+\def\NNTggFTag{NR-UNBLIND-FEB22-2} % crypto-fullStat2b-stdBS-2
+\def\NNTVBFTag{VBF-Xhh45-full2b-mean}
+\begin{figure}[ht]
+	\centering
+	\subfloat[2018: 4b ggF, CR1]{ 
+	    	\includegraphics[width=\textwidth]{figures/nr-int-note/category/V4/CR12/\NNTggFTag-m-hh-Control-Region-1-NN-18-4bggF-3-dEta-unrolled}
+		\label{fig:ggF-18-4b-CR1}
+	} \\
+	\subfloat[Inclusive years: VBF, CR1]{ 
+		\includegraphics[width=0.45\textwidth]{figures/nr-int-note/category/V3/CR12/\NNTVBFTag-m-hh-Control-Region-1-NN-all-4bVBF-2-dEtadEta-1.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/nr-int-note/category/V3/CR12/\NNTVBFTag-m-hh-Control-Region-1-NN-all-4bVBF-2-dEtadEta-2.pdf}
+		\label{fig:VBF-all-CR1}
+	}
+	\caption{Distributions in CR1 after reweighting and categorization for ggF 2018 and VBF inclusive years.
+	Bootstrap and Poisson errors are included.
+	}
+	\label{fig:CR1-unroll-18}
+\end{figure}
+
+

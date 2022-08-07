@@ -1,0 +1,47 @@
+\section{Datasets (?)}
+\label{sec:intro}
+
+Algorithm training and evaluation is performed with simulated $t\bar{t}$ events, produced by $\sqrt{s} = 13$~TeV proton-proton collisions, in which at least one of the W bosons, from the top quark decay, decays leptonically. 
+Events are generated using the
+\powhegbox~\cite{Frixione:2007nw, Nason:2004rx, Frixione:2007vw, Alioli:2010xd}~v2
+generator at next-to-leading order with the NNPDF3.0NLO~\cite{Ball:2014uwa} parton set
+of distribution functions~(PDF) and the \hdamp\ parameter\footnote{The
+  \hdamp\ parameter is a resummation damping factor and one of the
+  parameters that controls the matching of Powheg matrix elements to
+  the parton shower and thus effectively regulates the
+  high-\pt\ radiation against which the \ttbar\ system recoils.} set
+to 1.5~\mtop~\cite{ATL-PHYS-PUB-2016-020}, with $\mtop = 172.5$ GeV.  The events are interfaced
+to \pythia.230~\cite{Sjostrand:2014zea} to model the parton shower,
+hadronisation, and underlying event, with parameters set according
+to the A14 tune~\cite{ATL-PHYS-PUB-2014-021} and using the \nnpdftwo
+set of PDFs~\cite{Ball:2012cx}. The decays of $b$ and $c$-hadrons
+are performed by \evtgen~v1.6.0~\cite{Lange:2001uf}.
+Particles are passed through the ATLAS detector simulation \cite{SOFT-2010-01} based on GEANT4 \cite{Agostinelli:2002hh}.
+
+Jets are reconstructed from particle flow objects \cite{PERF-2015-09} using the anti-$k_T$ algorithm \cite{Cacciari:2008gp} with $R=0.4$. 
+The jet energy scale is calibrated according to \cite{PERF-2016-04}.
+Jets used for training and evaluation have $\pT \geq 20$ GeV, $|\eta|$ < 2.5, and are required not to overlap with a generator-level electron or muon from W boson decays. 
+Additionally, the contamination of jets from other interactions in the beam crossing (pile-up) is surpressed by applying the jet vertex tagger \cite{ATLAS-CONF-2014-018} optimized for particle flow jets. 
+%, jets with $\pT$ < 60 GeV and $|\eta|~>~2.4$ are removed if failing a jet vertex tagging (JVT) requirement that has an efficiency of 92\% for jets originating from the hard scatter vertex, with a residual rate of pile-up jets of approximately 2\%
+
+Tracks are associated to jets using a $\Delta R$ association cone which decreases as a function of jet $\pT$, with a maximum association $\Delta R$(track, jet) of approximately 0.45 for a jet with $\pT = 20$~GeV and $\Delta R$(track, jet) of approximately 0.25 when the jet $\pT = 200$~GeV. 
+If a track is within the association cones of more than one jet, it is assigned to the jet which has a smaller $\Delta R$(track, jet).
+
+The impact parameter of the track characterises the point-of-closest approach of a track to the PV in the longitudinal ($z_0\sin \theta$) and transverse ($d_0$) planes. 
+Of particular use in $b$-tagging is the IP significance defined as the impact parameter divided by its uncertainty, $s_{d0} = d_0 / \sigma_{d0}$ and $s_{z0} = z_0 \sin \theta / \sigma_{z0 \sin \theta}$. 
+% The \textit{lifetime sign} is used to sign the 
+The track's IP and its significance are signed according to the track's direction with respect to the jet axis and the primary vertex~\cite{PERF-2012-04}. A positive IP is expected to be consistent with a track produced from a displaced vertex. 
+This procedure is referred to as lifetime signing.
+%, as it aids in characterising whether the track is more likely to come from a long lived hadron or a wrongly associated tracks. \textbf{NEED LIFETIME SIGN DEFINITION}. 
+The nominal track selection considered in the algorithms to be described requires tracks with $\pT  > 1$ GeV,  $|d_0| < 1$ mm, and  $|z_0 \sin \theta | < 1.5$ mm.
+% We consider two track $\pT$ and IP selections for the tracks in the training. The first is the tight selection of the RNNIP algorithm with $\pT  > 1$ GeV,  $|d_0| < 1$ mm, and  $|z_0 \sin \theta | < 1.5$ mm. The second is a looser selection with $\pT$ > 500 MeV, $|d_0| <$ 3.5 mm and $|z_0 \sin \theta | <$ 5 mm.
+
+The jets are labelled as $b$-jets if they are matched to at least one $b$-hadron having $\pT \geq 5$ GeV within $\Delta R$($b$-hadron, jet)$< 0.3$ of the jet axis. 
+If this condition is not satisfied, then $c$-hadrons and then $\tau$ leptons are searched for, with similar selection criteria.
+If a jet is matched to a $c$-hadron ($\tau$-lepton), it is labelled a $c$-jet ($\tau$-jet).
+%,  within 0.3 of the jet axis, the jet is labelled as a $c$-jet. Jets not identified as $b$- or $c$-jets but with a $\tau$-lepton within 0.3 of the jet axis are given a $\tau$ label. 
+A jet that does not meet any of these conditions is called a light-flavour jet.%, which can include jets initiated by $u$- $d$-, and $s$-quarks or gluons, although there are some residual PU jets that can leak into this category as well.
+
+%For RNNIP, we compared training with and without a dedicated output node for jets in the $\tau$ class, but as the $\tau$ class did not improve our $b$-tagging performance, we show experiments for the network trained only on $b$, $c$, and $l$-jets.\footnote{Should I include these with and without $\tau$ node plots in the appendix?}
+
+%textbf{Note w/ the fakes issue that Nick Style's was talking about, we will have fake tracks leaking into our fragmentation category.}

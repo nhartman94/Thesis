@@ -1,0 +1,50 @@
+\begin{table}
+\centering
+\caption{ggF \HH MC simulation yields at each step in the analysis event selection for 4b events in the VBF channel normalized to 126.1\ifb, alongside the ratio of each yield to the initial yield and to the yield for the previous cut. [MAR22 production]}
+\subfloat[4b SM ggF \HH MC simulation (VBF channel)]{
+\centering
+\label{tab:mc_ggF_sm_VBF_chan_4tag_cutflow}
+\begin{tabular}{lccc}
+\toprule
+{} &     Yield &  Yield / Pre-selection &  Yield / Prior cut \\
+\midrule
+%Initial (Unweighted for MC)            & 4.605e+06 &                      - &                  - \\
+Pass NTuple Preselection               &     526.6 &                      1 &                  - \\
+Trigger                                &       475 &                 0.9019 &             0.9019 \\
+Trigger Buckets                        &       419 &                 0.7956 &             0.8821 \\
+Multiply FTAG, trig, + JVT SFs         &     381.8 &                  0.725 &             0.9112 \\
+VBF channel                            &     5.208 &                0.00989 &            0.01364 \\
+$\ge$ 4 central jets, $\ge$ 2 $b$-tags &     5.155 &               0.009789 &             0.9898 \\
+$\ge$ 4 $b$-tags                       &      1.14 &               0.002165 &             0.2212 \\
+$|\Delta\eta_{hh}| < 1.5$              &      1.14 &               0.002165 &                  1 \\
+Top Veto                               &     1.008 &               0.001914 &             0.8838 \\
+Signal Region                          &    0.4833 &              0.0009177 &             0.4796 \\
+Control Region 2                       &     0.123 &              0.0002336 &              0.122 \\
+Control Region 1                       &    0.1703 &              0.0003234 &              0.169 \\
+\bottomrule
+\end{tabular}
+} \ 
+\subfloat[4b \kl = 10 ggF \HH MC simulation (VBF channel)]{
+\centering
+\label{tab:mc_ggF_k10_VBF_chan_4tag_cutflow}
+\begin{tabular}{lccc}
+\toprule
+{} &     Yield &  Yield / Pre-selection &  Yield / Prior cut \\
+\midrule
+%Initial (Unweighted for MC)            & 4.813e+07 &                      - &                  - \\
+Pass NTuple Preselection               &      7338 &                      1 &                  - \\
+Trigger                                &      6917 &                 0.9427 &             0.9427 \\
+Trigger Buckets                        &      6378 &                 0.8692 &              0.922 \\
+Multiply FTAG, trig, + JVT SFs         &      5279 &                 0.7194 &             0.8278 \\
+VBF channel                            &     81.14 &                0.01106 &            0.01537 \\
+$\ge$ 4 central jets, $\ge$ 2 $b$-tags &     80.22 &                0.01093 &             0.9888 \\
+$\ge$ 4 $b$-tags                       &     15.29 &               0.002084 &             0.1906 \\
+$|\Delta\eta_{hh}| < 1.5$              &     15.29 &               0.002084 &                  1 \\
+Top Veto                               &     11.15 &               0.001519 &              0.729 \\
+Signal Region                          &     3.099 &              0.0004223 &              0.278 \\
+Control Region 2                       &     1.449 &              0.0001975 &               0.13 \\
+Control Region 1                       &     1.851 &              0.0002522 &              0.166 \\
+\bottomrule
+\end{tabular}
+} \ 
+\end{table}

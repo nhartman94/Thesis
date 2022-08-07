@@ -1,0 +1,15 @@
+\subsubsection{Definition of ggF and VBF Channels}
+
+\hl{James wrote this... I need to rephrase}
+
+This analysis possesses two channels targeting different \HH production processes. One is optimized for gluon-gluon fusion (ggF) and the other for vector boson fusion (VBF). The channel an event is placed in depends on whether it contains the two high energy and well-spaced jets characteristic of the VBF topology. If so, the event is placed in the VBF channel. If not, it is placed in the ggF channel. In this section, for ease of reading, these two jets will be referred to as the \textit{VBF Jets}.
+
+First, to belong to the VBF channel, an event must possess a minimum of six jets. The VBF Jets are reconstructed as the two jets with the highest di-jet invariant mass ($m_{jj}$) from the pool of both central and forward jets that failed the b-tag requirement. If no such pair exists, the event is placed in the ggF channel.
+
+To reduce the number of background events three cuts are then applied. If an event passes all three cuts it is placed in the VBF channel; otherwise, it is placed in the ggF channel. The first two are a cut on the rapidity-gap between the VBF Jets of $\detajj > 3$ and on their combined invariant mass of $m_{jj} > 1000\ \GeV$. Finally, the six four-vectors corresponding to the \HH and VBF Jets are summed, and a requirement applied that the \pt of that combined four-vector be less than 65 \GeV. The \HH is not reconstructed until after events are placed into VBF and ggF channels. Here, the same method for identifying the \HH jets as in the reconstruction is used only to facilitate applying this cut.
+
+If an event passes the VBF channel criteria, the jets used to reconstruct the VBF jets are removed from the pool of jets that the \HH can be reconstructed from.
+
+The ggF and VBF channels are designed to be orthogonal in order to facilitate statistically combining them when deriving results. 
+As shown in \Sect{\ref{subsec:sigYields}} \Tab{\ref{tab:ggF_4SR_yields}}, a negligible fraction of ggF signal is leaked in the VBF channel even with the priority of the VBF selection. %; while the cuts applied to the VBF Jets were optimized for the VBF signal. 
+When optimizing the analysis, we saw the impact of the VBF veto for our ggF signals was at the 2\% level, and as such, this deemed orthogonalization strategy to be acceptable.
