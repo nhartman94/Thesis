@@ -92,7 +92,7 @@ We present a different training for RNNIP than \cite{ATL-PHYS-PUB-2017-003} and 
 
 The RNNIP and DIPS trainings were performed with 3 million jets, with 20\% of these jets held out as a validation set to determine when to stop the training. 
 After 10 consecutive training epochs (or iterations through the training dataset) without finding a new validation loss minimum, the training is terminated and the model with the best validation loss was selected.  Both the RNNIP and DIPS architectures were implemented in Keras \cite{chollet2015keras} and trained with the TensorFlow backend \cite{tensorflow2015-whitepaper}. 
-Algorithms were trained with the Adam optimiser \cite{kingma2014adam} with a learning rate of $10^{-3}$ and a batch size of 256. 
+Algorithms were trained with the Adam optimizer \cite{kingma2014adam} with a learning rate of $10^{-3}$ and a batch size of 256. 
 The performance metrics shown in the following sections are obtained with a statistically independent dataset of 3 million jets.
 
 \subsection{Performance}
@@ -155,8 +155,7 @@ We suspect these correlations are observed to be relatively small due to the dis
 
 \begin{figure}[htbp!]
     \centering
-    \includegraphics[width=0.8\linewidth]{\figpath/saliency/mc16d_PFlow_BTagging201903_ttbar_pt_1000_d0_1_z0_1.5/Db/noNorm/img_misID_b_77WP_8trks}%12trks
-    %{img_misID_b_70WP_12trks}
+    \includegraphics[width=0.8\linewidth]{\figpath/saliency/mc16d_PFlow_BTagging201903_ttbar_pt_1000_d0_1_z0_1.5/Db/noNorm/img_misID_b_77WP_8trks}
     \caption{Saliency map for $b$-jets with 8 tracks. The track features are shown on the $y$-axis, the tracks (ordered by $s_{d_0}$) are listed on the $x$-axis. The colors in each pixel represent the gradient defined in Equation \ref{eq:salmap}. }
     \label{fig:saliency}
 \end{figure}
@@ -281,7 +280,7 @@ The average number of tracks of different origin per jet is shown in Table~\ref{
 
 \begin{table}[htbp!]
   \begin{center} 
-    \begin{tabular}{l | c | c | c | c | c } % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between 
+    \begin{tabular}{l | c | c | c | c | c } % 
       \textbf{Jet Flavour}         & \textbf{Track selection} & \textbf{$n_{trk}$} & \textbf{$n_{trk}^{HF}$} & \textbf{$n_{trk}^{hadr}$} & \textbf{$n_{trk}^{other}$}     \\
       \hline
       \multirow{2}{*}{$b$-jets} & \textit{nominal}      &  $5.9\pm2.7$ & $3.4\pm1.8$  & $2.0\pm1.9$ & $0.4\pm0.8$  \\
@@ -320,18 +319,6 @@ The DIPS with additional features and \textit{loose} track selection, denoted \t
 For the following studies, Optimised DIPS is built with the same architecture described in Section~\ref{subsec:algdetails}.
 %to the nominal DIPS training and the DIPS training with only the \textit{loose} track selection. 
 The Optimised DIPS outperforms the nominal DIPS  by up to a factor of 2 in light-flavour jet rejection and a factor of 1.5 in the $c$-jet rejection.
-
-% \begin{figure}[ht]
-%     \centering
-%     \subfloat{ 
-%             \includegraphics[width=0.48\textwidth]{rocAvgIter_l_stdROC}
-%     }   
-%     \subfloat{ 
-%             \includegraphics[width=0.48\textwidth]{rocAvgIter_c_stdROC}
-%     }   
-%     \caption{$b$-jet efficiency versus light-flavour jet rejection and for $b$-jet efficiency versus $c$-jet rejection of the DIPS (purple), RNNIP (green), and Optimised DIPS (orange) algorithms. The central curves and error bands show the mean and standard deviation, respectively, of the rejection at each $b$-jet efficiency of 5 trainings.}
-%     \label{fig:roc_rnnip_dips_opt}
-% \end{figure}
 
 While ROC curves give a global view of an algorithm's performance, the behavior of the $b$-tagging efficiency and the background rejection as a function of key kinematic variables is also vital to performance within analyses. 
 To explore this metric, a threshold defining an inclusive 77\% $b$-tagging efficiency for each algorithm is determined, and the $b$-jet efficiency and background rejections with this fixed threshold are examined as a function of kinematic quantities. 

@@ -1,0 +1,61 @@
+\chapter{Reweighting loss function}
+\label{rw-loss-fct}
+
+The derivation below follows the proof from \cite[sean-thesis].
+
+Remember in \Sect{\ref{sec:rw-overview}} we introduced the loss function:
+
+\begin{equation}
+	\mathcal{L}[Q] = \mathbb{E}_{x\sim p_{2b}} \left[ \exp\left(  \frac{1}{2} Q(x) \right) \right] + \mathbb{E}_{x\sim p_{4b}} \left[ \exp\left(  - \frac{1}{2} Q(x) \right) \right]
+\end{equation}
+
+We want to show that $Q^*(x) = \log w(x) $, where $w^(x) = p_{4b}(x) / p_{2b}(x) $, minimizes this loss.
+
+Since $\log$ is a (monotonically increasing) bijective function,
+%
+%\begin{equation}
+%Q^* = \arg \min_Q \mathcal{L}[Q]  =  \log \arg \min_R \mathcal{L} [w]
+%\end{equation} 
+%
+we can just show that the loss function with respect to $w$ is minimized when $w(x) = p_{4b}(x) / p_{2b}(x)$.
+
+%\hl{I need to decide whether w(x) = p4b / p2b or if this will be w*.}
+
+\begin{align}
+	\mathcal{L}[w] &= \mathbb{E}_{x\sim p_{2b}} \left[ \sqrt{ w(x)} \right] + \mathbb{E}_{x\sim p_{4b}} \left[ \frac{1}{\sqrt{ w(x)}} \right] \\
+	&= \int \left[ \sqrt{w(x)} p_{2b}(x) +\frac{1}{ \sqrt{w(x)} } p_{4b}(x) \right] dx
+\end{align}
+
+This function that is the extrema of this integral can be solved for by the calculus of variations. Let
+
+\begin{equation*}
+\mathcal{I}( x_1 , \ldots , x_n, w, w' ) =  \sqrt{w(x)} p_{2b}(x) +\frac{1}{ \sqrt{w(x)} } p_{4b}(x).
+\end{equation*}
+
+The solution to the extrema of the loss is given by the Euler-Lagrange equation:
+
+\begin{equation*}
+\frac{\partial \mathcal{I}}{\partial w} - \frac{d}{dx_i}  \frac{\partial \mathcal{I}}{\partial w'} = 0
+\end{equation*}
+
+Since there is no explicit dependence on the $x_i$s, we just need to solve for $\frac{\partial \mathcal{I}}{\partial w} =0$.
+
+\begin{align*}
+\frac{\partial \mathcal{I}}{\partial w} =  \frac{1}{2} w^{-1/2} p_{2b} &- \frac{1}{2} w^{-3/2} p_{4b} = 0 \\
+\implies w(x) &= p_{4b} / p_{2b}
+\end{align*}
+
+This is the $w^*$ that we were searching for! To show that it's also a minimum, take the $2^{nd}$ functional derivative:
+
+\begin{equation}
+\frac{\partial^2 \mathcal{I}}{\partial w^2} = - \frac{1}{4} w ^{-3/2} p_{2b} + \frac{3}{4} w^{-5/2} p_{4b} = \frac{1}{4} w ^{-3/2} \left( 3 p_4b - \frac{1}{4} w p_{2b} \right)
+\end{equation}
+
+and evaluate it at the extrema point:
+
+\begin{equation*}
+\phantomtext{\left.}  \frac{\partial^2 \mathcal{I}}{\partial w^2} \right|_{w = p_{4b} / p_{2b}} =  \frac{1}{4} w ^{-3/2} \cdot \left( 2.75 p_{4b}  \right) > 0
+ \end{equation*}
+
+
+because $w(x)$ and $p_{4b}(x)$ are positive. Therefore, $\mathcal{L}[w]$ is concave up at $w(x) = p_4b (x) / p_{2b}(x)$ and this $w$ is in fact a minimum.

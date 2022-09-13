@@ -1,60 +1,47 @@
 \chapter{Event Reconstruction}
 \label{ch:evtReco}
 
-\section{Overview}
-(electrons, photos, muons, + taus)
-I might mention them ... I might not b/c they aren't used by 4b
-At least I should mention e- and muons tho...
+\begin{chapquote}{Hebrews 11:3}
+{The things which are seen are not made of the things which do appear.}
+\end{chapquote}
 
-\section{Tracks}
+The task of event reconstruction involves taking electronic read out signals from the 100 million sensors in the detector and to reconstruct objects that can serve as proxies to the physics observables (i.e, $b$-quarks) % from a HIggs decay)
+that to use in high-level physics analysis.
+Since the LHC collides protons, %, three quarks held together by gluons
+we produce lots of quarks and gluons in the final state, with an example of the signature these particles produce in the detector shown in \Fig{\ref{fig:tracks-clusters-annotated}}.
 
-\section{Vertex reconstruction}
+\begin{figure}[hbt]
+\centering
+\includegraphics[width=.6\textwidth]{figures/cp-graphics/tracks-clusters-annotated}
+\caption{Illustration of what a jet looks like in our detector}
+\label{fig:tracks-clusters-annotated}
+\end{figure}
 
-The event's selected primary vertex (PV) is defined as the reconstructed primary vertex with largest $\sum \pT^2$ of the associated tracks. 
-
-
-\section{Jets}
-
-\subsection{Jet clustering algorithms}
-
-A given $pp$ collision produces many quarks and gluons.  However, because of the ``confinement principle,'' no free color charge can exist, which means no isolated quarks or gluons can exist in nature. %\cite{SM_Higgs, Particle_World}.  
-It becomes energetically favorable for quark / anti-quark pairs to pop out of the vacuum to balance the color charge imbalance by forming color neutral hadrons. 
-This sparks a chain reaction which produces a spray of particles in the detector. 
-
-The anti-k$_T$ algorithm provides a way to cluster the energy deposited in the calorimeter to form a ``jet,'' and is the standard algorithm for defining jets at ATLAS \cite{antiKt}.  First it defines two quantities, 
-%
-\begin{equation}
-d_{ij} = {\text{min}}( p_{Ti}^{-2}, p_{Tj}^{-2}) \frac{\Delta R_{ij}}{R^2} \qquad \qquad  d_i = p_{Ti}^{-2}
-\end{equation}
-%
-where $\Delta R_{ij}^2 = (y_i - y_j)^2 + (\phi_i - \phi_j)^2$, and $R$ is the jet-radius, defined by the user.  To find the jets, the algorithm
-%
-\begin{itemize}
-\item{Calculates $d_{ij}$ and $d_i$ for all particles in the event, and lets $d$ be the smallest $d_i$, $d_{ij}$.}
-%\item{Find all the $d_{ij}$ and $d_i$ in the event, and let $d = min(\{d_{ij}, D_i\})$}
-	\begin{itemize}
-	\item{If $d = d_{ij}$, then it combines jet $i$ and jet $j$.}
-	\item{If $d = d_{i}$, then it lets jet $i$ be the final jet.}
-	\end{itemize}
-\item{It continues the previous steps until all the particles in the event have been accounted for.}
-\end{itemize}
-%
-This algorithm clusters high-$p_T$ particles together if they fall within the jet's radius. \\
-
-The $pp$ collisions at 13~TeV typically will give rise to about 20 moderate $p_T$ jets in the detector, or around ${{20}\choose{2}} = 190$ viable di-jet candates.  So the challenge in elucidating the $H\rightarrow b\bar{b}$ or $HH \rightarrow 4b$ signals is accurately finding the ``correct'' pair(s) of jets.
-
-Since the protons are not point-like, the colliding partons may not have equal $p_T$ in the lab frame. By definition, the net momentum will be zero in the center of mass (CM) frame.  A heavy ($\sim$TeV) resonance can be created at (or nearly at) rest in the CM frame, but when Lorentz boosting back into the lab frame the decay products can become highly collimated.  When the decay products can no longer be resolved individually, we instead search for jets with a large radius parameter (``fat jets''), indicative of merged jets \cite{SM_Higgs, Merged_Jets}.  The constituent clusters inside a fat jet are called \emph{subjets}.  
-Large R (about 1.0) correspond to fat jets, and R about 0.4 correspond to the standard resolved jets.
+Since this thesis deals with an analysis with an all-hadronic final states, these are the key input objects for the analysis and for my work in \Pqb-tagging, so in this chapter we focus on the reconstruction of these types of events.
+We include this graphic here, because it nicely demonstrates the outline for this chapter
+The charged particle trajectories in the inner detector form a set of tracks, and will be described in \Sect{\ref{sec:tracks}}.
+The tracks that originate from the same location are then reconstructed into vertices, as described in \Sect{\ref{sec:vertices}}.
+The unsupervised learning algorithms that get reconstructs the quark and gluon decay products into the ``jets'' are described in \Sect{\ref{sec:jets}}.
+Finally, we conclude with the reconstruction muon tracks in \Sect{\ref{sec:muons}}.
 
 
-\subsection{PFlow}
+\textbf{Citation:} The European Physical Journal C Vol 73 3 (2013) 2304
+% Note - if I include this, I \emph{know} that Pat will ask me about the details, so I should make sure I understand the color coding, etc.
 
-\subsection{VR}
+\input{chapters/cp-subsecs/tracks}
 
-\subsection{Boosted jets}
+\FloatBarrier
+\clearpage
+\input{chapters/cp-subsecs/vertexing}
 
-\subsection{Muons}
+\clearpage
+\input{chapters/cp-subsecs/jets}
+
+\section{Muons}
+\label{sec:muons}
+
 Def useful for muon in jet + pt reco correction!!
+%Also - for describing the DL1rmu tagger .
 
 %\subsection{Pileup suppression}
 %\subsection{Event cleaning}

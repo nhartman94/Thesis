@@ -1,0 +1,24 @@
+<!DOCTYPE Combination SYSTEM "HistFactorySchema.dtd">
+<Combination OutputFilePrefix="workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig">
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_16_dEta_1_Xhh_1.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_16_dEta_2_Xhh_1.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_16_dEta_3_Xhh_1.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_16_dEta_1_Xhh_2.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_16_dEta_2_Xhh_2.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_16_dEta_3_Xhh_2.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_17_dEta_1_Xhh_1.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_17_dEta_2_Xhh_1.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_17_dEta_3_Xhh_1.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_17_dEta_1_Xhh_2.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_17_dEta_2_Xhh_2.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_17_dEta_3_Xhh_2.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_18_dEta_1_Xhh_1.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_18_dEta_2_Xhh_1.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_18_dEta_3_Xhh_1.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_18_dEta_1_Xhh_2.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_18_dEta_2_Xhh_2.xml</Input>
+  <Input>workspaces/comb/roowksp_ggF_chan_allNP_samps_ggf_pd_ggf_161718/config/FitConfig_ggf_18_dEta_3_Xhh_2.xml</Input>
+  <Measurement Name="ggf_meas" Lumi="1.0" LumiRelErr="0.1" ExportOnly="True">
+    <POI>mu_HH mu_HH_ggF mu_HH_VBF</POI>
+    <ParamSetting Const="True">Lumi</ParamSetting></Measurement>
+  </Combination>

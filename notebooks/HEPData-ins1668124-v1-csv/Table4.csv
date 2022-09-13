@@ -1,0 +1,16 @@
+#: table_doi: 10.17182/hepdata.82599.v1/t4
+#: name: Table 4
+#: description: The observed and expected 95% CL upper limits on the production cross section times branching ratio for SM non-resonant Higgs pair production.
+#: data_file: limits_smhh.yaml
+#: keyword reactions: P P --> HIGGS HIGGS X | HIGGS --> BQ BQBAR
+#: keyword observables: SIG
+#: keyword cmenergies: 13000.0
+#: keyword phrases: Proton-Proton Scattering | Higgs | Higgs pair Production | Beauty
+#: RE,P P --> HIGGS HIGGS X --> BQ BQBAR BQ BQBAR X
+ [],Observed limit [fb]
+SM HH,147
+
+#: RE,P P --> HIGGS HIGGS X --> BQ BQBAR BQ BQBAR X
+ [],Expected limit [fb],1 sigma +,1 sigma -,2 sigma +,2 sigma -
+SM HH,234,105,-65,258,-108
+

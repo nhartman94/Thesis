@@ -1,35 +1,5 @@
 \subsection{Object Selection}
 
-Jets are separated into two groups based on their kinematics: 
-\begin{description}
-	\item[\textit{Central} jets:] $|\eta| < 2.5,\ \pt \ge 40\ \GeV$ -  these jets are used for triggering and will form  Higgs-candidates;
-	\item[\textit{Forward} jets:] $|\eta| \ge 2.5,\ \pt \ge 30\ \GeV$ - these extra jets are used to improve the acceptance of jets produced in the vector boson fusion production process.
-\end{description}
-
-\subsubsection{\Pqb-jets Selection}
-\label{sec:sel-btag}
-
-In order to maximize sensitivity, events are selected and categorized based on the number of \Pqb-tagged \textit{central} jets. 
-The \Pqb-tagging algorithm used, DL1r, is described in \Sect{\ref{subsec:ftag}}. 
-
-\paragraph{Ordering and selection} For the jets that form our Higgs Candidates, we take the four leading \Pqb-tagged jets. In events with less than four \Pqb-jets, the extra jets are selected as the highest $p_T$ jets from the pool of \textit{central} jets which failed the initial \Pqb-tag requirement.
-
-\paragraph{\Pqb-tag Requirements} The \Pqb-tag selection for ggF and VBF signals is to require \textbf{at least 4 central jets with DL1r 77\% WP}. Events with two \bjets are classified as 2b events and are used for deriving the data-driven background estimate described in \Sect{\ref{sec:bkgdestimation}}. We also define a systematic on our background estimation using events with 3 \Pqb-tags, and the corresponding \Pqb-tag categories used in this analysis are summarized in table \ref{tab:b-tag-cat}.
-
-\begin{table}[!htbp]
-	\centering
-	  \begin{tabularx}{\textwidth}{l|X|l}
-	  Notation     & Definition & Usage \\
-	  \toprule
-	  2b    & Exactly two central jets tagged with DL1r 77\% WP & Background estimation \\ \hline
-	  3b1f  & Exactly three central jets tagged with DL1r 77\% WP and no central jets passing the 85\% WP (the leading \pT non-\Pqb-jet is taken for the last Higgs Candidate jet) & Background estimate systematic \\ \hline
-	  4b    & At least four central jets tagged with DL1r 77\% WP & Signal region (ggF and VBF) \\
-	  \bottomrule
-	  \end{tabularx}
-	\caption{Different analysis definitions based on number of \Pqb-tags.}
-	\label{tab:b-tag-cat}
-  \end{table}%
-
   \paragraph{Accuracy} The Higgs jet selection accuracy is defined as the probability that all four \Pqb-jets in the event are matched to the truth \Pqb-quarks using a $\Delta R$ < 0.3 matching criterion, and is shown is \Fig{\ref{fig:jetSel-4b}}.
   The jet selection accuracy is 74\% for the ggF selection with \%-level variations across the \kl values of interest. 
   This means that there is a \SI{74}{\%} chance the selected four \Pqb-jets are coming from the real Higgs decayed \Pqb-quarks. This accuracy loss is dominated by events where one of the \Pqb-quarks is out of acceptance. 

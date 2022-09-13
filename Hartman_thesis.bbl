@@ -1689,5 +1689,100 @@
     \endverb
     \field{year}{2018}
   \endentry
+
+  \entry{ATLAS-CONF-2015-029}{booklet}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{ATLAS Collaboration}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{{ATLAS-CONF-2015-029}}
+    \field{title}{{Selection of jets produced in \(13~\text{TeV}\)
+  proton--proton collisions with the ATLAS detector}}
+    \verb{url}
+    \verb https://cds.cern.ch/record/2037702
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{EXOT-2016-31}{article}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{ATLAS Collaboration}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/JHEP01(2019)030
+    \endverb
+    \verb{eprint}
+    \verb 1804.06174
+    \endverb
+    \field{pages}{030}
+    \field{title}{{Search for pair production of Higgs bosons in the
+  \(b\bar{b}b\bar{b}\) final state using proton--proton collisions at
+  \(\sqrt{s} = 13\,\text{TeV}\) with the ATLAS detector}}
+    \field{volume}{01}
+    \field{journaltitle}{JHEP}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{hep-ex}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Cowan:2010js}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CG}{%
+         family={Cowan},
+         familyi={C\bibinitperiod},
+         given={Glen},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Cranmer},
+         familyi={C\bibinitperiod},
+         given={Kyle},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GE}{%
+         family={Gross},
+         familyi={G\bibinitperiod},
+         given={Eilam},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=VO}{%
+         family={Vitells},
+         familyi={V\bibinitperiod},
+         given={Ofer},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CG+1}
+    \strng{fullhash}{CGCKGEVO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1140/epjc/s10052-011-1554-0
+    \endverb
+    \verb{eprint}
+    \verb 1007.1727
+    \endverb
+    \field{pages}{1554}
+    \field{title}{{Asymptotic formulae for likelihood-based tests of new
+  physics}}
+    \field{volume}{71}
+    \field{journaltitle}{Eur. Phys. J. C}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{physics.data-an}
+    \field{year}{2011}
+  \endentry
 \enddatalist
 \endinput

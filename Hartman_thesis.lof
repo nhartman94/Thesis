@@ -1,0 +1,391 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {nil}{}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \cite {wiki-sm}\relax }}{3}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \cite {Melissa-thesis}\relax }}{4}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces \cite {2207.00092}\relax }}{5}{figure.caption.8}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Need to cite: https://twiki.cern.ch/twiki/bin/view/AtlasPublic/LuminosityPublicResultsRun2\#Pileup\_Interactions\_and\_Data\_Tak\relax }}{7}{figure.caption.9}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{7}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{7}{subfigure.1.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Cut away of the ATLAS detector ~\cite {ATLAS_long}\relax }}{9}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Illustration of the orientation of the subsystems inside the ATLAS Inner Detector~\cite {Aad:2008Jinst}\relax }}{11}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces List of the dimensions of the subsystems in the ID~\cite {ATLAS_long}.\relax }}{12}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The structural elements in the ID at $\eta = 0.3$~\cite {ATLAS_long}.\relax }}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The structural elements in the ID at $\eta = 1.4$~\cite {ATLAS_long}.\relax }}{14}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Schematic for the general idea for how a pixel detector tracks incident particles. ~\cite {Quantum_diaries}\relax }}{15}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Illustration of the active region of the pixel detector with the barrel and endcap layers~\cite {Aad:2008Jinst}\relax }}{16}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Principle of operation for the TRT~\cite {TRT}\relax }}{18}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Schematic illustrating how a sampling calorimeter causes an incident particle to form a shower more quickly. ~\cite {Sampling_Cal}\relax }}{19}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Accordian sampling structure for calorimeter. ~\cite {LAr}\relax }}{20}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Wedge showing the accordian structure for the liquid Argon portion of the calorimeter. ~\cite {LAr}\relax }}{21}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Calorimeter system at ATLAS~\cite {ATLAS_long}.\relax }}{22}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Main parameters for the Muon Spectrometer. The values in parentheses refer to the configuration from 2009~\cite {ATLAS_long}.\relax }}{24}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Monitored Drift Tubes: MDTs\relax }}{25}{figure.caption.33}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Illustration of how an MDT works ~\cite {ATLAS_long}.}}}{25}{subfigure.14.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {The orientation of the multi-layer MDT chamber with the support structure~\cite {ATLAS_long}.}}}{25}{subfigure.14.2}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Illustration of the data acquisition chain -- a sequence of decisions in hardware (L1) and software (HLT) which determines which events get saved \cite {javier-iaifi-2} \cite {ATL-COM-DAQ-2014-054}.\relax }}{26}{figure.caption.34}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Illustration of what a jet looks like in our detector\relax }}{27}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \hl {need to ask Valentina where this pic was from originally}.\relax }}{29}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \cite {jinst-9-2014-P09009}.\relax }}{30}{figure.caption.37}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{30}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{30}{subfigure.3.2}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces \cite {ATL-SOFT-PUB-2007-003}\relax }}{31}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \cite {giacinto-thesis}\relax }}{32}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Visualization of the track extrapolation with its associated errors \cite {ATL-SOFT-PUB-2007-005}.\relax }}{32}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Improvement for moving to the PFlow algorithm for jet reconstruction.\relax }}{35}{figure.caption.41}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\ensuremath {p_{\text {T}}}\xspace resolution}}}{35}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\phi $ resolution}}}{35}{subfigure.7.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Schematic illustration for the characteristic ``long'' lifetime of a \Pqb -hadron \cite {b-trig-paper}. \relax }}{37}{figure.caption.42}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Illustration of what a b-decay looks like in the ATLAS detector. The cyan colored lines illustrate the tracks from the \Pqb -hadron decay, and in the inset figure you can see the displacement of these tracks from the primary vertex. Only three pixel layers are shown as this is a Run~1 event, and the IBL was not yet installed. \hl {Need to revise older notes to find where this event display came from (or ask Su Dong)}. \relax }}{38}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Visualization of the (x,y) and $(z,\rho \phi )$ 2d views of the tracks for reconstructing the secondary vertex (or vertices). The arrow on the figure indicates the jet axis, and a $\star $ shows where the weakly decaying hadron decays. The solid lines are tracks from the HF decay, while the dashed lines denote the other tracks associated to the jet.\relax }}{39}{figure.caption.45}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Types of \Pqb -taggers used on ATLAS\relax }}{40}{figure.caption.46}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Lifetime signage graphic (from \cite {giacinto-thesis})\relax }}{42}{figure.caption.48}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Probabilistic graphical model illustration for a Naive Bayes algorithm. \relax }}{43}{figure.caption.50}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces \cite {ATL-PHYS-PUB-2017-003}\relax }}{43}{figure.caption.51}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{subfigure.7.2}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Lifetime signed transverse (a) and longitudinal (b) significances for $b$-jets, $c$-jets and light-flavor jets.\relax }}{44}{figure.caption.53}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}{subfigure.8.2}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces RNNIP architecture (modified from \ref {ATL-PHYS-PUB-2017-003}).\relax }}{45}{figure.caption.55}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces The SV1 inputs that (will be) in the FTAG algos paper \cite {ANA-FTAG-2019-07}.\relax }}{48}{figure.caption.57}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{48}{subfigure.10.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{48}{subfigure.10.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{48}{subfigure.10.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{48}{subfigure.10.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{48}{subfigure.10.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{48}{subfigure.10.6}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces \cite {ATL-PHYS-PUB-2018-025}\relax }}{49}{figure.caption.59}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Reconstruction of the $B$ (left) and $D$ (right) hadron masses from the truth charged particles.\relax }}{51}{figure.caption.60}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$B$-hadron reconstruction}}}{51}{subfigure.12.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$D$-hadron reconstruction}}}{51}{subfigure.12.2}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces \relax }}{51}{figure.caption.61}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Vertex reco in \Pqb -jets}}}{51}{subfigure.13.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Vertex reco in \Pqc -jets}}}{51}{subfigure.13.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Vertex reco in light jets}}}{51}{subfigure.13.3}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces \relax }}{52}{figure.caption.62}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces \relax }}{53}{figure.caption.63}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$B$-hadron reconstruction}}}{53}{subfigure.15.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$D$-hadron reconstruction}}}{53}{subfigure.15.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {roc}}}{53}{subfigure.15.3}%
+\contentsline {figure}{\numberline {6.16}{\ignorespaces The JF inputs that (will be) in the FTAG algos paper \cite {ANA-FTAG-2019-07}.\relax }}{54}{figure.caption.65}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{54}{subfigure.16.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{54}{subfigure.16.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{54}{subfigure.16.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{54}{subfigure.16.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{54}{subfigure.16.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{54}{subfigure.16.6}%
+\contentsline {figure}{\numberline {6.17}{\ignorespaces The \ensuremath {p_{\text {T}}}\xspace spectrum for training the Full Run 2 FTAG recommendations.\relax }}{56}{figure.caption.66}%
+\contentsline {figure}{\numberline {6.18}{\ignorespaces The evolution of heavy flavor compared to the number of fragmentation tracks that have $\ensuremath {p_{\text {T}}}\xspace > 1~\mathrm {GeV}$, $|d_0| < 1$~mm, $|z_0 \qopname \relax o{sin}\theta < 1.5$~mm, .\relax }}{56}{figure.caption.67}%
+\contentsline {figure}{\numberline {6.19}{\ignorespaces \relax }}{57}{figure.caption.68}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {light rejection}}}{57}{subfigure.19.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\Pqc rejection}}}{57}{subfigure.19.2}%
+\contentsline {figure}{\numberline {6.20}{\ignorespaces \relax }}{57}{figure.caption.69}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {light rejection}}}{57}{subfigure.20.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\Pqc rejection}}}{57}{subfigure.20.2}%
+\contentsline {figure}{\numberline {6.21}{\ignorespaces \relax }}{58}{figure.caption.70}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {light rejection}}}{58}{subfigure.21.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\Pqc rejection}}}{58}{subfigure.21.2}%
+\contentsline {figure}{\numberline {6.22}{\ignorespaces \relax }}{58}{figure.caption.71}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{58}{subfigure.22.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{58}{subfigure.22.2}%
+\contentsline {figure}{\numberline {6.23}{\ignorespaces \relax }}{59}{figure.caption.72}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{59}{subfigure.23.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{59}{subfigure.23.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{59}{subfigure.23.3}%
+\contentsline {figure}{\numberline {6.24}{\ignorespaces \relax }}{59}{figure.caption.73}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{59}{subfigure.24.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{59}{subfigure.24.2}%
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Comparison of the PFlow and VR track jet \ensuremath {p_{\text {T}}}\xspace for jet reconstruction.\relax }}{60}{figure.caption.74}%
+\contentsline {figure}{\numberline {6.26}{\ignorespaces The \ensuremath {p_{\text {T}}}\xspace spectrum for the VR track jets using the modified sample cut of 125~GeV for the light jet and \Pqb -jet \ensuremath {p_{\text {T}}}\xspace .\relax }}{60}{figure.caption.75}%
+\contentsline {figure}{\numberline {6.27}{\ignorespaces \relax }}{61}{figure.caption.76}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {light rejection}}}{61}{subfigure.27.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\Pqc rejection}}}{61}{subfigure.27.2}%
+\contentsline {figure}{\numberline {6.28}{\ignorespaces \relax }}{61}{figure.caption.77}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {light rejection}}}{61}{subfigure.28.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\Pqc rejection}}}{61}{subfigure.28.2}%
+\contentsline {figure}{\numberline {6.29}{\ignorespaces \relax }}{62}{figure.caption.78}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{62}{subfigure.29.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{62}{subfigure.29.2}%
+\contentsline {figure}{\numberline {6.30}{\ignorespaces \relax }}{62}{figure.caption.79}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{62}{subfigure.30.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{62}{subfigure.30.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{62}{subfigure.30.3}%
+\contentsline {figure}{\numberline {6.31}{\ignorespaces \relax }}{63}{figure.caption.80}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{63}{subfigure.31.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{63}{subfigure.31.2}%
+\contentsline {figure}{\numberline {6.32}{\ignorespaces Need to cite the 36 ifb and 139 ifb.\relax }}{64}{figure.caption.81}%
+\contentsline {figure}{\numberline {6.33}{\ignorespaces \relax }}{65}{figure.caption.82}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{65}{subfigure.33.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{65}{subfigure.33.2}%
+\contentsline {figure}{\numberline {6.34}{\ignorespaces Illustration of how the lifetime signage is less likely to be negative for a long lived particle (from Andy Buckley's slides).\relax }}{65}{figure.caption.83}%
+\contentsline {figure}{\numberline {6.35}{\ignorespaces \relax }}{66}{figure.caption.84}%
+\contentsline {figure}{\numberline {6.36}{\ignorespaces Architecture for the DIPS algorithm. The number of hidden units in the different neural network layers correspond to the final optimized architecture.\relax }}{69}{figure.caption.85}%
+\contentsline {figure}{\numberline {6.37}{\ignorespaces Distributions of DIPS $b$-tagging discriminant, as defined in Equation \ref {eq:dipsdiscriminant}, for $b$-jets, $c$-jets and light-flavour jets.\relax }}{70}{figure.caption.86}%
+\contentsline {figure}{\numberline {6.38}{\ignorespaces Light-flavour jet rejection as a function of $b$-jet efficiency (a) and $c$-jet rejection as a function $b$-jet efficiency (b) of the RNNIP (green) and DIPS (purple) algorithms. The central curves and error bands show the mean and standard deviation, respectively, of the rejection at each $b$-jet efficiency for 5 trainings. The ratios are computed with respect to the RNNIP ROC curve.\relax }}{71}{figure.caption.87}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{71}{subfigure.38.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{71}{subfigure.38.2}%
+\contentsline {figure}{\numberline {6.39}{\ignorespaces Saliency map for $b$-jets with 8 tracks. The track features are shown on the $y$-axis, the tracks (ordered by $s_{d_0}$) are listed on the $x$-axis. The colors in each pixel represent the gradient defined in Equation \ref {eq:salmap}. \relax }}{73}{figure.caption.88}%
+\contentsline {figure}{\numberline {6.40}{\ignorespaces $D_b$ discriminant distributions for the nominal and flipped taggers. The vertical dashed lines correspond to the discriminant requirements for 85\% , 77\% , 70\% and 60\% inclusive $b$-jet efficiencies, corresponding to the efficiency benchmarks used at analysis level. Plots (a), (c) and (e) refer to the RNNIP performance, while (b), (d) and (f) refer to DIPS. Plots (a) and (b), (c) and (d), (e) and (f) show light-flavour jets, $c$-jets and $b$-jets respectively.\relax }}{76}{figure.caption.91}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{76}{subfigure.40.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{76}{subfigure.40.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{76}{subfigure.40.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{76}{subfigure.40.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{76}{subfigure.40.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{76}{subfigure.40.6}%
+\contentsline {figure}{\numberline {6.41}{\ignorespaces 1 - Cumulative efficiency as a function of $b$-tagging discriminant for RNNIP (a) and DIPS (b). In both cases, the performance remains nearly unchanged for light-flavour jets when comparing nominal and flipped taggers, while the $b$-jet and $c$-jet efficiencies drop.\relax }}{77}{figure.caption.92}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{77}{subfigure.41.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{77}{subfigure.41.2}%
+\contentsline {figure}{\numberline {6.42}{\ignorespaces Light-flavour jet rejection as a function of $b$-jet efficiency (a) and $c$-jet rejection as a function of $b$-jet efficiency (b) of the nominal DIPS setup, DIPS with \emph {loose} track selection, and Optimised DIPS with the \emph {loose} track selection and additional IP inputs. The central curves and error bands show the mean and standard deviation, respectively, of the rejection at each $b$-jet efficiency for 5 trainings. The ratios are computed with respect to the DIPS ROC curve.\relax }}{78}{figure.caption.94}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{78}{subfigure.42.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{78}{subfigure.42.2}%
+\contentsline {figure}{\numberline {6.43}{\ignorespaces Performance plots using a fixed cut with 77\% $b$-jet efficiency. Plots (a), (b) and (c) show the $b$-jet efficiency as a function of jet $\ensuremath {p_{\text {T}}}\xspace $, $\eta $ and average number of proton-proton collisions per bunch crossing $\langle \mu \rangle $. Plots (d), (e) and (f) show the light-flavour rejection as a function of the same quantities, while plots (g), (h) and (i) show the $c$-jet rejection.\relax }}{79}{figure.caption.95}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{79}{subfigure.43.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{79}{subfigure.43.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{79}{subfigure.43.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{79}{subfigure.43.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{79}{subfigure.43.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{79}{subfigure.43.6}%
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {}}}{79}{subfigure.43.7}%
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {}}}{79}{subfigure.43.8}%
+\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {}}}{79}{subfigure.43.9}%
+\contentsline {figure}{\numberline {6.44}{\ignorespaces Performance plots using a requirement where the $b$-jet efficiency is 77\% in each bin. Plots (a) and (b) show the light-flavour rejection as a function of jet $\ensuremath {p_{\text {T}}}\xspace $ and $\eta $, while plots (c) and (d) show the $c$-jet rejection as a function of the same quantities.\relax }}{81}{figure.caption.96}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{81}{subfigure.44.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{81}{subfigure.44.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{81}{subfigure.44.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{81}{subfigure.44.4}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces The leading order gluon-gluon fusion di-Higgs production Feynman diagrams.\relax }}{84}{figure.caption.97}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {The box diagram.}}}{84}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {The triangle diagram.}}}{84}{subfigure.1.2}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Impact of the interference of the box and triangle diagrams for ggF HH production.\relax }}{85}{figure.caption.98}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces The three tree-level vector boson fusion di-Higgs production Feynman diagrams. A convention the matrix elements names is given in the captions of the respective diagrams.\relax }}{86}{figure.caption.99}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\mathcal {M}_{\lambda }$}}}{86}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\mathcal {M}_{2V}$}}}{86}{subfigure.3.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\mathcal {M}_{V}$}}}{86}{subfigure.3.3}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Branching ratios of the di-Higgs at the LHC.\relax }}{87}{figure.caption.100}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Cross-section dependence on $\kappa _\lambda $.\relax }}{87}{figure.caption.101}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Impact of the destructive interference for the $\kappa _\lambda $variations.\relax }}{88}{figure.caption.102}%
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Impact of the signal reweighting for the $\kappa _\lambda $=10 sample. The SM that we reweighted from is shown in yellow, while the reweighted distribution for $\kappa _\lambda $=10 is shown in turquoise and compared to the true $\kappa _\lambda $=10 distribution. \hl {Note, I'll want to include the min\_dR version of this plot instead of the BDT one}.\relax }}{90}{figure.caption.103}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Reconstructed \ensuremath {m_{\PH \xspace \PH \xspace }}\xspace }}}{90}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Reconstructed HH \ensuremath {p_{\text {T}}}\xspace }}}{90}{subfigure.7.2}%
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Impact of the HH channels in the combination for the resonant scalar mass $m_X$ search \cite {ATLAS-CONF-2021-052}.\relax }}{92}{figure.caption.105}%
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Impact of the NR analysis selection for selected ggF signals.\relax }}{93}{figure.caption.106}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SM}}}{93}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\kappa _\lambda $= 2}}}{93}{subfigure.9.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\kappa _\lambda $= 10}}}{93}{subfigure.9.3}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Illustration of the high-level analysis strategy.\relax }}{94}{figure.caption.107}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Trigger efficiencies of the 2b1j, 2b2j and combined for the MC16a/d/e corresponding to years 2016-2018 for the SM ggF $\kappa _\lambda $=1 signal. Significantly lower efficiency for 2017 2b2j comparing to other years is due to tighter b-tagging requirement (lower efficiency). \hl {Is this plot inside of the SR?}\relax }}{96}{figure.caption.112}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Trigger bucket strategy for non-resonant searches.\relax }}{96}{figure.caption.113}%
+\contentsline {figure}{\numberline {9.4}{\ignorespaces The bucket composition of \ensuremath {m_{\PH \xspace \PH \xspace }}\xspace for the SM ggF (left) and $\kappa _{2V}$= 0 VBF (right) \PH {}\PH \xspace MC simulation in the 4b Signal Regions. Bucket 1 corresponds to the 2b1j trigger and Bucket 2 corresponds to the 2b2j trigger.\relax }}{97}{figure.caption.114}%
+\contentsline {figure}{\numberline {9.5}{\ignorespaces Illustration of how the combined offline / online \Pqb -tagging SF is calculated.\relax }}{98}{figure.caption.115}%
+\contentsline {figure}{\numberline {9.6}{\ignorespaces Online jet kinematic scale factors of 2b1j trigger as a function of offline jet \ensuremath {p_{\text {T}}}\xspace in 2017. Vertical error bars include statistical uncertainties on the data, while the green bands correspond to the quadrature sum of statistical and systematic uncertainties.\relax }}{99}{figure.caption.117}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {1st jet at L1}}}{99}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {2nd jet at L1}}}{99}{subfigure.6.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {3rd jet at L1}}}{99}{subfigure.6.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {1st jet at HLT}}}{99}{subfigure.6.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {2nd jet at HLT}}}{99}{subfigure.6.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {3rd jet at HLT}}}{99}{subfigure.6.6}%
+\contentsline {figure}{\numberline {9.7}{\ignorespaces Comparisons of $m_{\PH 1}$, $m_{\PH 2}$ and \ensuremath {m_{\PH \xspace \PH \xspace }}\xspace distributions before the \Pqb -jet corrections~(blue) and after the \Pqb -jet corrections~(red). These distributions are fitted using Bukin function, and the peak, the peak resolusion and the relative improvement are shown in the legend.\relax }}{102}{figure.caption.120}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$m_{\PH 1}$}}}{102}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$m_{\PH 2}$}}}{102}{subfigure.7.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\ensuremath {m_{\PH \xspace \PH \xspace }}\xspace }}}{102}{subfigure.7.3}%
+\contentsline {figure}{\numberline {9.8}{\ignorespaces The jet selection accuracy as a function of $\kappa _\lambda $and $\kappa _{2V}$.\relax }}{103}{figure.caption.122}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Jet selection accuracy vs $\kappa _\lambda $}}}{103}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Jet selection accuracy vs $\kappa _{2V}$}}}{103}{subfigure.8.2}%
+\contentsline {figure}{\numberline {9.9}{\ignorespaces Truth \ensuremath {m_{\PH \xspace \PH \xspace }}\xspace distributions for correctly and incorrectly selected jets, for ggF (a) and VBF (b) signals.\relax }}{104}{figure.caption.123}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ggF signals}}}{104}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {VBF signals}}}{104}{subfigure.9.2}%
+\contentsline {figure}{\numberline {9.10}{\ignorespaces The three possible pairing permutations of the four \PH {}\PH \xspace jets into the two Higgs candidates. The opening angles between the jets in the leading Higgs Candidate are indicated, so pair number 2 is the selected pairing.\relax }}{106}{figure.caption.126}%
+\contentsline {figure}{\numberline {9.11}{\ignorespaces The pairing accuracy as a function of $\kappa _\lambda $and $\kappa _{2V}$, given that the correct jets have been selected.\relax }}{106}{figure.caption.128}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pairing accuracy vs $\kappa _\lambda $}}}{106}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pairing accuracy vs $\kappa _{2V}$}}}{106}{subfigure.11.2}%
+\contentsline {figure}{\numberline {9.12}{\ignorespaces Pairing accuracy as a function of truth \ensuremath {m_{\PH \xspace \PH \xspace }}\xspace , given that the correct jets have been selected. The ggF selection accuracy is derived from the ggF SM sample, and the VBF selection accuracy is derived from the VBF $\kappa _{2V}$sample.\relax }}{107}{figure.caption.129}%
+\contentsline {figure}{\numberline {9.13}{\ignorespaces The \ensuremath {|\Delta \eta _{\PH \xspace \PH \xspace }|}\xspace distribution for SM ggF \PH {}\PH \xspace Monte Carlo simulation and blinded data in the ggF channel. The solid purple line indicates the \ensuremath {|\Delta \eta _{\PH \xspace \PH \xspace }|}\xspace < 1.5 cut that is applied in the ggF selection. Events to the right of this line are discarded.\relax }}{111}{figure.caption.130}%
+\contentsline {figure}{\numberline {9.14}{\ignorespaces \ensuremath {X_{\PW \Pqt }}\xspace distributions for our analysis categories in the 2018 dataset. The solid pink line indicates the $\ensuremath {X_{\PW \Pqt }}\xspace $ > 1.5 cut applied to both the ggF and VBF channels. Event on the left of the line are discarded.\relax }}{111}{figure.caption.131}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {4b ggF selection}}}{111}{subfigure.14.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {4b VBF selection}}}{111}{subfigure.14.2}%
+\contentsline {figure}{\numberline {9.15}{\ignorespaces Selected Higgs Candidate signal mass planes.\relax }}{112}{figure.caption.132}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {4b ggF SM signal}}}{112}{subfigure.15.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {4b $\kappa _{2V} = 0$ signal}}}{112}{subfigure.15.2}%
+\contentsline {figure}{\numberline {9.16}{\ignorespaces Visualization of the \ensuremath {X_{\PH \xspace \PH \xspace }}\xspace distribution for correctly and incorrectly paired events with the ggF (left) and VBF (right) analysis selections. The purple line indicates the SR defining cut.\relax }}{112}{figure.caption.133}%
+\contentsline {figure}{\numberline {9.17}{\ignorespaces The Higgs Candidate massplanes for the ggF and VBF analysis selections.\relax }}{113}{figure.caption.134}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Blinded 4b data for ggF selection}}}{113}{subfigure.17.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Blinded 4b data for VBF selection}}}{113}{subfigure.17.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {2b data for ggF selection}}}{113}{subfigure.17.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {2b data for VBF selection}}}{113}{subfigure.17.4}%
+\contentsline {figure}{\numberline {9.18}{\ignorespaces Distributions of the variables used for categorization in the ggF channel. Years are merged. To visualize the signals they are scaled by $\alpha = 100$ and 10 for the SM NR and $\kappa _\lambda $ = 10 signals, respectively.\relax }}{116}{figure.caption.137}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {All year merged: 4b ggF \ensuremath {|\Delta \eta _{\PH \xspace \PH \xspace }|}\xspace }}}{116}{subfigure.18.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {All year merge: 4b ggF \ensuremath {X_{\PH \xspace \PH \xspace }}\xspace }}}{116}{subfigure.18.2}%
+\contentsline {figure}{\numberline {9.19}{\ignorespaces 4b \ ggF background and selected signal histograms for 2016, 2017, and 2018 with the proposed binning and categorization. To visualize the signals they are scaled by $\alpha = 100$ and 10 for the SM NR and $\kappa _\lambda $ = 10 signals, respectively.\relax }}{117}{figure.caption.138}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2016: 4b ggF}}}{117}{subfigure.19.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {2017: 4b ggF}}}{117}{subfigure.19.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {2018: 4b ggF}}}{117}{subfigure.19.3}%
+\contentsline {figure}{\numberline {9.20}{\ignorespaces 4b \ ggF background and selected signal histograms for 2016, 2017, and 2018 with the proposed binning and categorization. To visualize the signals they are scaled by $\alpha = 100$ and 10 for the SM NR and $\kappa _\lambda $ = 10 signals, respectively.\relax }}{118}{figure.caption.139}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2016: 4b ggF}}}{118}{subfigure.20.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {2017: 4b ggF}}}{118}{subfigure.20.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {2018: 4b ggF}}}{118}{subfigure.20.3}%
+\contentsline {figure}{\numberline {9.21}{\ignorespaces Distributions of the difference in pseudorapidity of the two reconstructed Higgs bosons ($\ensuremath {|\Delta \eta _{\PH \xspace \PH \xspace }|}\xspace $) for signal Monte Carlo simulation, data and the background estimate in the VBF channel. The categorisation boundary is shown as a straight purple line at 1.5. The lefthand plot, Figure \ref {fig:vbf-detahh-4bdata}, shows the pre-$X_{wt}$ cut distributions for three key couplings -- $\kappa _{\lambda } = 10$, $\kappa _{2V} = 0$ and the Standard Model prediction -- alongside the 4b data distribution excluding events in the Signal Region. The righthand plot, Figure \ref {fig:vbf-detahh-bkg}, shows the post-$X_{wt}$ cut distributions for the same couplings alongside the reweighted 2b distribution that is used to estimate the background contribution. All signal distributions have been scaled up as to be visible next to data and reweighted data.\relax }}{119}{figure.caption.141}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Full mass plane with SR data blinded.}}}{119}{subfigure.21.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {SR with reweighted 2b background estimate.}}}{119}{subfigure.21.2}%
+\contentsline {figure}{\numberline {9.22}{\ignorespaces Distributions of the reconstructed $m_{HH}$ for signal Monte Carlo simulation and the estimate of the background in each of the two $\ensuremath {|\Delta \eta _{\PH \xspace \PH \xspace }|}\xspace $ categories in the VBF channel. Distributions for three of the key couplings are shown -- $\kappa _{\lambda } = 10$, $\kappa _{2V} = 0$ and the Standard Model prediction. Additionally, the significance of the scaled signal ($\alpha \times S/\sqrt {B}$) in each of the histogram bins is shown. Events in the underflow and overflow bins are counted in the yields of the initial and final bins respectively. The signals distributions are scaled as to be visible on the plot, and the scaling for each coupling is the same across the two categories.\relax }}{120}{figure.caption.142}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\ensuremath {|\Delta \eta _{\PH \xspace \PH \xspace }|}\xspace < 1.5$}}}{120}{subfigure.22.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\ensuremath {|\Delta \eta _{\PH \xspace \PH \xspace }|}\xspace \geq 1.5$}}}{120}{subfigure.22.2}%
+\contentsline {figure}{\numberline {9.23}{\ignorespaces 4b Signal Region yield and statistical significance of the VBF and ggF Monte Carlo simulation in the VBF and ggF SRs versus $\kappa _{\lambda }$. In the legend, "channel" means SR. \relax }}{131}{figure.caption.153}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Signal yield versus $\kappa _{\lambda }$}}}{131}{subfigure.23.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Significance versus $\kappa _{\lambda }$}}}{131}{subfigure.23.2}%
+\contentsline {figure}{\numberline {9.24}{\ignorespaces 4b Signal Region yield and statistical significance of the VBF Monte Carlo simulation in the VBF and ggF SRs versus $\kappa _{2V}$. In the legend, "channel" means SR. \relax }}{131}{figure.caption.154}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Signal yield versus $\kappa _{2V}$}}}{131}{subfigure.24.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Significance versus $\kappa _{2V}$}}}{131}{subfigure.24.2}%
+\contentsline {figure}{\numberline {9.25}{\ignorespaces 4b Signal Region acceptance times efficiency versus $\kappa _\lambda $and $\kappa _{2V}$.\relax }}{132}{figure.caption.155}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Acceptance times efficiency versus $\kappa _\lambda $}}}{132}{subfigure.25.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Acceptance times efficiency $\kappa _{2V}$}}}{132}{subfigure.25.2}%
+\contentsline {figure}{\numberline {9.26}{\ignorespaces 4b Signal Region acceptance times efficiency for the VBF SM Monte Carlo simulation in the VBF or ggF selection in $\kappa _{2V}$-$\kappa _\lambda $plane.\relax }}{133}{figure.caption.156}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {VBF selection}}}{133}{subfigure.26.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {ggF selection}}}{133}{subfigure.26.2}%
+\contentsline {figure}{\numberline {9.27}{\ignorespaces 4b Signal Region acceptance times efficiency.\relax }}{134}{figure.caption.157}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ggF MC: $\kappa _\lambda $variation}}}{134}{subfigure.27.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {VBF MC: $\kappa _\lambda $variation}}}{134}{subfigure.27.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {VBF MC: $\kappa _{2V}$variation}}}{134}{subfigure.27.3}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Distributions of $\Delta R$ between the closest Higgs Candidate jets, $\Delta R$ between the other two (training variables) and the mass of the di-Higgs system (non-training variable) before and after CR~1 derived reweighting for the 2018 Control~Region~1.\relax }}{140}{figure.caption.161}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Before Reweighting}}}{140}{subfigure.1.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {After Reweighting}}}{140}{subfigure.1.6}%
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Distributions of the top veto variable, $X_{\PW \Pqt }$, the second smallest $\Delta R$ between the jets in the leading candidate (training variables) and the mass of the leading and subleading Higgs candidates and of the di-Higgs system (non-training variable) before and after CR~1 derived reweighting for the all years inclusive Control~Region~1.\relax }}{141}{figure.caption.162}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Before Reweighting}}}{141}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {After Reweighting}}}{141}{subfigure.2.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Before Reweighting}}}{141}{subfigure.2.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {After Reweighting}}}{141}{subfigure.2.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Before Reweighting}}}{141}{subfigure.2.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {After Reweighting}}}{141}{subfigure.2.6}%
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Distributions in CR1 after reweighting and categorization for ggF 2018 and VBF inclusive years. Bootstrap and Poisson errors are included. \relax }}{142}{figure.caption.163}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2018: 4b ggF, CR1}}}{142}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inclusive years: VBF, CR1}}}{142}{subfigure.3.2}%
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Illustration of the bootstrap band procedure, shown as a ratio to the nominal estimate. Each grey line is from the \ensuremath {m_{\PH \xspace \PH \xspace }}\xspace prediction for a single bootstrap training, and the solid red line shows the standard deviation of histograms for the 2017 ggF background estimate (left) and VBF years inclusive background estimate (right). \relax }}{144}{figure.caption.164}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Comparison with histogram bin IQR}}}{144}{subfigure.4.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{144}{subfigure.4.2}%
+\contentsline {figure}{\numberline {10.5}{\ignorespaces SR quadrants chosen to derive the four background variation nuisance parameters.\relax }}{145}{figure.caption.165}%
+\contentsline {figure}{\numberline {10.6}{\ignorespaces Example of variation in the SR NP quadrants for the 2016~ggF~discriminant.\relax }}{147}{figure.caption.166}%
+\contentsline {figure}{\numberline {10.7}{\ignorespaces Example of variation in the SR NP quadrants for the 2017~ggF~discriminant.\relax }}{148}{figure.caption.167}%
+\contentsline {figure}{\numberline {10.8}{\ignorespaces Example of variation in the SR NP quadrants for the 2018~ggF~discriminant.\relax }}{149}{figure.caption.168}%
+\contentsline {figure}{\numberline {10.9}{\ignorespaces Relative error contributions of the background for the 4b~ggF~discriminant.\relax }}{154}{figure.caption.172}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {4b\ 2016 ggF}}}{154}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {4b\ 2017 ggF}}}{154}{subfigure.9.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {4b\ 2018 ggF}}}{154}{subfigure.9.3}%
+\contentsline {figure}{\numberline {10.10}{\ignorespaces Relative error contributions of the background for the 4b~VBF~discriminant.\relax }}{155}{figure.caption.173}%
+\contentsline {figure}{\numberline {10.11}{\ignorespaces Impact of background shape nuisance parameter variation on \ensuremath {m_{\PH \xspace \PH \xspace }}\xspace in different kinematic categories for the ggF channel. Each column is a different year for the ggF channel templates while the rows show the SR NP quadrants.\relax }}{156}{figure.caption.175}%
+\contentsline {figure}{\numberline {10.12}{\ignorespaces Impact of background shape nuisance parameter variation on \ensuremath {m_{\PH \xspace \PH \xspace }}\xspace in different kinematic categories for the ggF channel. Each column is a different years of the ggF channel templates while the rows show each category with the SR NP quadrants overlaid.\relax }}{158}{figure.caption.176}%
+\contentsline {figure}{\numberline {10.13}{\ignorespaces Illustration of the modified cuts to test the background estimate strategy.\relax }}{159}{figure.caption.177}%
+\contentsline {figure}{\numberline {10.14}{\ignorespaces Motivation for choices of shifted SRs.\relax }}{160}{figure.caption.178}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Just shift the centers of $X_{hh}$}}}{160}{subfigure.14.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$X_{hh}^{shift}$ definition}}}{160}{subfigure.14.2}%
+\contentsline {figure}{\numberline {10.15}{\ignorespaces The shifted regions for the background validation, with the pink solid curve in the center showing the nominal SR. \relax }}{161}{figure.caption.179}%
+\contentsline {figure}{\numberline {10.16}{\ignorespaces $m_{\PH \xspace \PH \xspace }$ distributions of reweighted 2b data and 4b data in the shifted SRs for the 2018\ background estimates. The background error bar includes the 2b Poisson, deep ensembles, and the CR1 / CR2 shape difference.\relax }}{162}{figure.caption.181}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\leavevmode {\color {deeppink}Upper left}}}}{162}{subfigure.16.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\leavevmode {\color {blue}Upper center}}}}{162}{subfigure.16.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\leavevmode {\color {green}Upper right}}}}{162}{subfigure.16.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\leavevmode {\color {cyan}Center right}}}}{162}{subfigure.16.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\leavevmode {\color {orange}Lower right}}}}{162}{subfigure.16.5}%
+\contentsline {figure}{\numberline {10.17}{\ignorespaces $\mu _{\mathrm {norm}}$ distribution in the shifted regions. 4b normalizations (black) and the gaussian fit (red) are shown. \relax }}{163}{figure.caption.183}%
+\contentsline {figure}{\numberline {10.18}{\ignorespaces Background only pull plots in the shifted regions\relax }}{164}{figure.caption.184}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\leavevmode {\color {deeppink}upper left}}}}{164}{subfigure.18.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\leavevmode {\color {blue}upper center} }}}{164}{subfigure.18.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\leavevmode {\color {green}upper right} }}}{164}{subfigure.18.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\leavevmode {\color {cyan}center right}}}}{164}{subfigure.18.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\leavevmode {\color {orange}lower right}}}}{164}{subfigure.18.5}%
+\contentsline {figure}{\numberline {10.19}{\ignorespaces $m_{\PH \xspace \PH \xspace }$ \textbf {data reweighted} 2b events and 4b events \textbf {evaluated on the QCD and \Pqt {}\Paqt \ MC} samples. The background estimate error includes the 2b poisson, deep ensembles, and CR1/CR2 shape systematic errors.\relax }}{165}{figure.caption.185}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$m_{\PH \xspace \PH \xspace }$ in 2016}}}{165}{subfigure.19.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$m_{\PH \xspace \PH \xspace }$ in 2017}}}{165}{subfigure.19.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$m_{\PH \xspace \PH \xspace }$ in 2018}}}{165}{subfigure.19.3}%
+\contentsline {figure}{\numberline {10.20}{\ignorespaces $m_{\PH \xspace \PH \xspace }$ \textbf {MC reweighted} 2b events and 4b events evaluated on the QCD and \Pqt {}\Paqt \ MC samples. The background estimate error includes the 2b poisson, deep ensembles, and CR1/CR2 shape systematic errors.\relax }}{165}{figure.caption.186}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$m_{\PH \xspace \PH \xspace }$ in 2016}}}{165}{subfigure.20.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$m_{\PH \xspace \PH \xspace }$ in 2017}}}{165}{subfigure.20.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$m_{\PH \xspace \PH \xspace }$ in 2018}}}{165}{subfigure.20.3}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {11.1}{\ignorespaces ggF 2016\ background only post-fit plots.\relax }}{167}{figure.caption.187}%
+\contentsline {figure}{\numberline {11.2}{\ignorespaces ggF 2017\ background only post-fit plots.\relax }}{167}{figure.caption.188}%
+\contentsline {figure}{\numberline {11.3}{\ignorespaces ggF 2018\ background only post-fit plots.\relax }}{168}{figure.caption.189}%
+\contentsline {figure}{\numberline {11.4}{\ignorespaces VBF background only post-fit plots.\relax }}{168}{figure.caption.190}%
+\contentsline {figure}{\numberline {11.5}{\ignorespaces Pulls for the fit to the background template.\relax }}{170}{figure.caption.192}%
+\contentsline {figure}{\numberline {11.6}{\ignorespaces The 95\% CLs limit on the combined ggF and VBF \PH {}\PH \xspace production cross-sections. Left plot is a breakdown of channels. \relax }}{172}{figure.caption.194}%
+\contentsline {figure}{\numberline {11.7}{\ignorespaces The limit intervals on the coupling modifier $\kappa _{2V}$at the 95\% CL for the combination of the VBF+ggF channels. Left plot is a breakdown of channels. \relax }}{173}{figure.caption.196}%
+\contentsline {figure}{\numberline {11.8}{\ignorespaces The obs (solid) and expected (dashed) limit intervals on the coupling modifiers $\kappa _\lambda $vs $\kappa _{2V}$(a) and $\kappa _V$vs $\kappa _{2V}$(b) at the 95\% CL for the combination of the VBF+ggF channels. {\color {red}\itshape TODO: (b) is expected only and with only the background shape uncertainties included. To be updated.}\relax }}{174}{figure.caption.197}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{174}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{174}{subfigure.8.2}%
+\contentsline {figure}{\numberline {11.9}{\ignorespaces \cite {ATLAS-CONF-2021-052} \cite {ATLAS-CONF-2022-050}\relax }}{174}{figure.caption.198}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Retraining DIPS with different specifications for the signs fo $d_0$ and $z_0 \qopname \relax o{sin}\theta $.\relax }}{178}{figure.caption.199}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {light rejection}}}{178}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {charm rejection}}}{178}{subfigure.1.2}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces \relax }}{184}{figure.caption.200}%
+\contentsline {figure}{\numberline {E.2}{\ignorespaces \relax }}{184}{figure.caption.201}%
+\contentsline {figure}{\numberline {E.3}{\ignorespaces \relax }}{185}{figure.caption.202}%
+\contentsline {figure}{\numberline {E.4}{\ignorespaces \relax }}{185}{figure.caption.203}%
+\contentsline {figure}{\numberline {E.5}{\ignorespaces \relax }}{186}{figure.caption.204}%
+\contentsline {figure}{\numberline {E.6}{\ignorespaces A comparison of the \ldots \relax }}{187}{figure.caption.205}%
+\contentsline {figure}{\numberline {E.7}{\ignorespaces Impact of using the $CL_{s}$ verses the $CL_{s+b}$ test statistic.\relax }}{188}{figure.caption.206}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Illustration of the task for Jet selection and pairing.\relax }}{189}{figure.caption.207}%
+\contentsline {figure}{\numberline {F.2}{\ignorespaces \relax }}{190}{figure.caption.208}%
+\contentsline {figure}{\numberline {F.3}{\ignorespaces The loss function for a pairAGraph training event with 5 input jets.\relax }}{191}{figure.caption.209}%
+\contentsline {figure}{\numberline {F.4}{\ignorespaces The jet embedding space.\relax }}{191}{figure.caption.210}%
+\contentsline {figure}{\numberline {F.5}{\ignorespaces The transformer architecture (left) and its building blocks: the weighted sum operation (middle) and the more expressive multi-head attention block formed by adding additional channels for the scaled dot product attention blocks (right) T \cite {1706.03762}.\relax }}{192}{figure.caption.211}%
+\contentsline {figure}{\numberline {F.6}{\ignorespaces \hl {need to add a legend!!}\relax }}{196}{figure.caption.214}%
+\contentsline {figure}{\numberline {F.7}{\ignorespaces \hl {need to add a legend!!}\relax }}{197}{figure.caption.215}%
+\contentsline {figure}{\numberline {F.8}{\ignorespaces Visualization of the multi-head attention weights from the transformer. The circles on the graph\relax }}{197}{figure.caption.217}%
+\contentsline {figure}{\numberline {F.9}{\ignorespaces Massplanes on the 2b data comparing several of the pairing algorithms. The gold line shows the \ldots where we will derive the reweighting for the limits in \ldots \hl {need to double check which limits I want to show here!}\relax }}{198}{figure.caption.218}%
+\contentsline {figure}{\numberline {F.10}{\ignorespaces Blinded massplanes on the 2b data comparing several of the pairing algorithms. The gold line shows the \ldots where we will derive the reweighting for the limits in \ldots \hl {need to double check which limits I want to show here!}\relax }}{198}{figure.caption.219}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {G.1}{\ignorespaces Performance of the inclusively trained reweighting evaluated on the \Pqt {}\Paqt simulation. The performance of the inclusively trained reweighting is evaluated on 2\Pqb \Pqt {}\Paqt simulation and compared to the 4\Pqb \Pqt {}\Paqt prediction. The error bar on the background prediction shows the quadrature sum of the 2b Poisson, deep ensembles, and CR1 / CR2 shape systematic error. \relax }}{200}{figure.caption.220}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {all-hadronic $t\bar {t}$}}}{200}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {semi-leptonic $t\bar {t}$}}}{200}{subfigure.1.2}%
+\contentsline {figure}{\numberline {G.2}{\ignorespaces Illustration of what how inclusively reweighting is doing to the separate components of the background estimate. The only background component that we need to use a data driven technique for is the QCD piece where we don't trust our simulation.\relax }}{201}{figure.caption.221}%
+\contentsline {figure}{\numberline {G.3}{\ignorespaces \ensuremath {m_{\PH \xspace \PH \xspace }}\xspace in 2\Pqb sample with an isolated muon for 2016 data in CR1. The dashed red line in the subpanel shows the fitted $ \alpha ^{sl}_{t\bar {t},2b}$\relax }}{202}{figure.caption.222}%
+\contentsline {figure}{\numberline {G.4}{\ignorespaces CR1 fits\relax }}{203}{figure.caption.224}%
+\contentsline {figure}{\numberline {G.5}{\ignorespaces CR1 fits\relax }}{203}{figure.caption.225}%
+\contentsline {figure}{\numberline {G.6}{\ignorespaces \relax }}{204}{figure.caption.226}%
+\contentsline {figure}{\numberline {G.7}{\ignorespaces CR1 fit in CR1\relax }}{204}{figure.caption.227}%
+\contentsline {figure}{\numberline {G.8}{\ignorespaces CR1 evaluation using the CR1 fits\relax }}{205}{figure.caption.228}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2016}}}{205}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {2017}}}{205}{subfigure.8.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {2018}}}{205}{subfigure.8.3}%
+\contentsline {figure}{\numberline {G.9}{\ignorespaces CR2 evaluation using the CR1 fits\relax }}{205}{figure.caption.229}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2016}}}{205}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {2017}}}{205}{subfigure.9.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {2018}}}{205}{subfigure.9.3}%
+\contentsline {figure}{\numberline {G.10}{\ignorespaces CR2 evaluation using the CR1 fits\relax }}{205}{figure.caption.230}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2016}}}{205}{subfigure.10.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {2017}}}{205}{subfigure.10.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {2018}}}{205}{subfigure.10.3}%
+\contentsline {figure}{\numberline {G.11}{\ignorespaces \relax }}{206}{figure.caption.231}%
+\contentsline {figure}{\numberline {G.12}{\ignorespaces CR1 fit in CR1\relax }}{206}{figure.caption.232}%
+\contentsline {figure}{\numberline {G.13}{\ignorespaces 3b1f SR evaluation using the CR1 fits\relax }}{207}{figure.caption.233}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2016}}}{207}{subfigure.13.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {2017}}}{207}{subfigure.13.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {2018}}}{207}{subfigure.13.3}%
+\contentsline {figure}{\numberline {G.14}{\ignorespaces 3b1f SR evaluation using the CR1 fits\relax }}{207}{figure.caption.234}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2016}}}{207}{subfigure.14.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {2017}}}{207}{subfigure.14.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {2018}}}{207}{subfigure.14.3}%
+\contentsline {figure}{\numberline {G.15}{\ignorespaces \leavevmode {\color {dodgerblue}$R_{2b^{t\bar {t}} \rightarrow 4b^{t\bar {t}}}$ } : The MC based 2\Pqb $\rightarrow $ 4\Pqb \Pqt {}\Paqt reweighting. \relax }}{210}{figure.caption.235}%
+\contentsline {figure}{\numberline {G.16}{\ignorespaces \leavevmode {\color {mediumpurple} $R_{2b^{t\bar {t}} \rightarrow 4b^{t\bar {t}}}$ }: Reweighting 2\Pqb data $\rightarrow $ 2\Pqb \Pqt {}\Paqt .\relax }}{210}{figure.caption.236}%
+\contentsline {figure}{\numberline {G.17}{\ignorespaces \ensuremath {X_{\PW \Pqt }}\xspace distributions in CR1 with the pre-fit (left) and post-fit (right) plots, compared to the 4b CR1 data.\relax }}{212}{figure.caption.238}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2016 pre-fit}}}{212}{subfigure.17.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {2016 post-fit}}}{212}{subfigure.17.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {2017 pre-fit}}}{212}{subfigure.17.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {2017 post-fit}}}{212}{subfigure.17.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {2018 pre-fit}}}{212}{subfigure.17.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {2018 post-fit}}}{212}{subfigure.17.6}%

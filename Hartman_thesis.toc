@@ -1,0 +1,188 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {nil}{}
+\contentsline {chapter}{Preface}{iv}{chapter*.1}%
+\contentsline {chapter}{Acknowledgments}{v}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Theoretical motivation}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The Standard Model}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}The Higgs mechanism}{2}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Effective Field Theories to search for new physics}{2}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Status of the experimental HH results}{2}{section.2.4}%
+\contentsline {chapter}{\numberline {3}The Large Hadron Collider}{6}{chapter.3}%
+\contentsline {chapter}{\numberline {4}The ATLAS detector}{8}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Overview}{8}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}ATLAS Coordinate System}{10}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Tracker}{11}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Inner Detector}{11}{subsection.4.2.1}%
+\contentsline {subsubsection}{Pixel Tracking System}{15}{section*.16}%
+\contentsline {subsubsection}{Silicon Microstrip Trackers}{16}{section*.18}%
+\contentsline {subsubsection}{Transition Radiation Tracker}{17}{section*.19}%
+\contentsline {section}{\numberline {4.3}Calorimeter}{18}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}ECAL}{18}{subsection.4.3.1}%
+\contentsline {subsubsection}{Sampling vs. Homogenous Calorimeters}{19}{section*.21}%
+\contentsline {subsubsection}{Liquid Argon Detector}{20}{section*.23}%
+\contentsline {subsection}{\numberline {4.3.2}HCAL}{22}{subsection.4.3.2}%
+\contentsline {subsubsection}{Tile Calorimeter}{22}{section*.27}%
+\contentsline {subsubsection}{LAr hadronic end--cap calorimeter}{23}{section*.28}%
+\contentsline {subsubsection}{LAr forward calorimeter}{23}{section*.29}%
+\contentsline {section}{\numberline {4.4}Muon system}{23}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Muon Spectrometer}{23}{subsection.4.4.1}%
+\contentsline {subsubsection}{Toroidal Magnets}{23}{section*.31}%
+\contentsline {subsubsection}{Monitored Drift Tubes}{25}{section*.32}%
+\contentsline {subsection}{\numberline {4.4.2}Cathode Strip Chambers}{25}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Trigger system}{26}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Event Reconstruction}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Tracks}{28}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Track reconstruction}{28}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Challenges in Dense Environments}{28}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Discussion of inputs}{28}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}The perigee parameters}{31}{subsection.5.1.4}%
+\contentsline {section}{\numberline {5.2}Vertexing}{33}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}General problem formulation}{33}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Primary vertex reconstruction}{33}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Jets}{34}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Jet clustering algorithms}{34}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}PFlow}{34}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Boosted jets}{35}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}VR track jets}{35}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}Muons}{35}{section.5.4}%
+\contentsline {chapter}{\numberline {6}b-tagging}{36}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{36}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Datasets (?)}{40}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Low level taggers}{42}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}IP2D and IP3D}{42}{subsection.6.3.1}%
+\contentsline {subsubsection}{Lifetime signage}{42}{section*.47}%
+\contentsline {subsubsection}{Mathematical motivation}{43}{section*.49}%
+\contentsline {subsubsection}{Algorithm description}{43}{section*.52}%
+\contentsline {subsection}{\numberline {6.3.2}RNNIP}{44}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}SV1}{46}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}JetFitter}{49}{subsection.6.3.4}%
+\contentsline {section}{\numberline {6.4}Recommendations for Run 2 b-taggers}{55}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}High level taggers: DL1 series}{55}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Evaluating tagger performance}{55}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}PFlow optimization}{55}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.4.4}VR track jets optimization}{60}{subsection.6.4.4}%
+\contentsline {subsection}{\numberline {6.4.5}Impact of FTAG improvements on analyses}{63}{subsection.6.4.5}%
+\contentsline {section}{\numberline {6.5}RNNIP calibratability}{63}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Calibration results}{63}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Desiderata for a flipped tagger}{63}{subsection.6.5.2}%
+\contentsline {section}{\numberline {6.6}Tagger R\&D: DIPS}{63}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Algorithm overview}{67}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.2}Implementation details}{68}{subsection.6.6.2}%
+\contentsline {subsection}{\numberline {6.6.3}Performance}{70}{subsection.6.6.3}%
+\contentsline {subsection}{\numberline {6.6.4}Baseline Performance}{70}{subsection.6.6.4}%
+\contentsline {subsection}{\numberline {6.6.5}Time comparison}{72}{subsection.6.6.5}%
+\contentsline {subsection}{\numberline {6.6.6}Calibratability}{74}{subsection.6.6.6}%
+\contentsline {subsection}{\numberline {6.6.7}Track Selection Optimisation}{75}{subsection.6.6.7}%
+\contentsline {subsection}{\numberline {6.6.8}Optimised DIPS Performance}{75}{subsection.6.6.8}%
+\contentsline {chapter}{\numberline {7}Statistical techniques}{82}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Hypothesis testing: a qualitiative introduction}{82}{section.7.1}%
+\contentsline {section}{\numberline {7.2}The likelihood}{83}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Test statistic}{83}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Asymptotic approximation}{83}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Types of Nuisance parameters that we use}{83}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}}{83}{section.7.4}%
+\contentsline {chapter}{\numberline {8}HH Physics overview}{84}{chapter.8}%
+\contentsline {section}{\numberline {8.1}HH signatures}{84}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Datasets and signal parametrization}{85}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}ggF: histogram based reweighting}{86}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}VBF: event level reweighting}{90}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}EFTs}{92}{subsection.8.2.3}%
+\contentsline {section}{\numberline {8.3}Analysis optimization strategy}{92}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Analysis selection}{94}{chapter.9}%
+\contentsline {subsubsection}{\Pqb -jets Selection}{94}{section*.108}%
+\contentsline {paragraph}{Ordering and selection}{95}{section*.109}%
+\contentsline {paragraph}{\Pqb -tag Requirements}{95}{section*.110}%
+\contentsline {section}{\numberline {9.1}Triggers}{95}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Trigger buckets}{96}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}b-jet SF}{97}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Kinematic SF}{98}{subsection.9.1.3}%
+\contentsline {section}{\numberline {9.2}Muon-in-jet + pt reco}{99}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Jets}{99}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}\Pqb -tagging}{100}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}\Pqb -jet corrections}{100}{subsection.9.2.3}%
+\contentsline {subsubsection}{$\mu $-in-jet}{101}{section*.118}%
+\contentsline {subsubsection}{\ensuremath {p_{\text {T}}}\xspace -reco}{101}{section*.119}%
+\contentsline {section}{\numberline {9.3}Event selection}{103}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Object Selection}{103}{subsection.9.3.1}%
+\contentsline {paragraph}{Accuracy}{103}{section*.121}%
+\contentsline {subsubsection}{Definition of ggF and VBF Channels}{103}{section*.124}%
+\contentsline {subsubsection}{Higgs candidate pairing}{105}{section*.125}%
+\contentsline {paragraph}{Pairing accuracy}{105}{section*.127}%
+\contentsline {subsection}{\numberline {9.3.2}Background Reduction and \Pqt {}\Paqt Veto}{108}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Kinematic Region Definition}{108}{subsection.9.3.3}%
+\contentsline {section}{\numberline {9.4}Analysis Categories}{114}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Definition of categories and binning}{114}{subsection.9.4.1}%
+\contentsline {subsubsection}{ggF categories}{115}{section*.136}%
+\contentsline {subsubsection}{VBF categories}{119}{section*.140}%
+\contentsline {subsection}{\numberline {9.4.2}Signal Yields}{130}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.3}Non-resonant signal acceptance versus $\kappa _\lambda $and $\kappa _{2V}$}{131}{subsection.9.4.3}%
+\contentsline {chapter}{\numberline {10}Background estimation}{135}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Reweighting overview}{137}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Validation plots}{138}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Marginal distributions}{138}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Validation plots in CR1 in categories}{139}{subsection.10.2.2}%
+\contentsline {section}{\numberline {10.3}Background systematics}{143}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Deep ensembles}{143}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Choice of control region}{145}{subsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.3.3}3b1f non-closure uncertainty}{150}{subsection.10.3.3}%
+\contentsline {subsubsection}{Summary of Background Modeling Uncertainties}{151}{section*.169}%
+\contentsline {subsection}{\numberline {10.3.4}Choice of background systematic parametrization}{151}{subsection.10.3.4}%
+\contentsline {section}{\numberline {10.4}Background validation}{159}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Reversed $|\Delta \eta _{HH}|$}{159}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Shifted regions}{160}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}MC validation}{165}{subsection.10.4.3}%
+\contentsline {chapter}{\numberline {11}Results}{166}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Background modelling}{166}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}B-only fits (?)}{166}{subsection.11.1.1}%
+\contentsline {section}{\numberline {11.2}Overview of signal systematic uncertainties}{169}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}S+B fits}{169}{subsection.11.2.1}%
+\contentsline {section}{\numberline {11.3}Limit plots}{171}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}ggF and VBF Channel Combination}{171}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}Improvements from previous analyses}{173}{subsection.11.3.2}%
+\contentsline {section}{\numberline {11.4}Combination result}{173}{section.11.4}%
+\contentsline {chapter}{\numberline {12}Conditional generative models for data-driven background modeling}{175}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Conclusions}{176}{chapter.13}%
+\contentsline {chapter}{\numberline {A}Tracking optimizations impact on flavor tagging}{177}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Lifetime signage}{177}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Different track reconstruction algorithms}{177}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Pseudo-tracking}{177}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}SCT splitting}{177}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}Looser B-cuts}{177}{subsection.A.2.3}%
+\contentsline {subsection}{\numberline {A.2.4}DIPS retrianing}{177}{subsection.A.2.4}%
+\contentsline {chapter}{\numberline {B}Reweighting loss function}{179}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Further statistics fundamentals}{181}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Gaussian Processes}{182}{appendix.D}%
+\contentsline {chapter}{\numberline {E}Further statistics details}{183}{appendix.E}%
+\contentsline {section}{\numberline {E.1}Asymptotics approximation}{183}{section.E.1}%
+\contentsline {section}{\numberline {E.2}Choice of CLs test statistic}{187}{section.E.2}%
+\contentsline {subsection}{\numberline {E.2.1}A pedagogical example}{187}{subsection.E.2.1}%
+\contentsline {subsection}{\numberline {E.2.2}Intuition building - impact on the 4b analysis}{188}{subsection.E.2.2}%
+\contentsline {chapter}{\numberline {F}ML for jet $\rightarrow $ parton assignment}{189}{appendix.F}%
+\contentsline {section}{\numberline {F.1}Motivation}{189}{section.F.1}%
+\contentsline {section}{\numberline {F.2}ML based solution}{190}{section.F.2}%
+\contentsline {subsection}{\numberline {F.2.1}Graph partitioning problem}{190}{subsection.F.2.1}%
+\contentsline {subsection}{\numberline {F.2.2}Transformers}{192}{subsection.F.2.2}%
+\contentsline {subsection}{\numberline {F.2.3}The 4b implementation: pairAGraph}{193}{subsection.F.2.3}%
+\contentsline {subsection}{\numberline {F.2.4}Other baselines we compare to}{193}{subsection.F.2.4}%
+\contentsline {section}{\numberline {F.3}Impact on the signal}{193}{section.F.3}%
+\contentsline {subsection}{\numberline {F.3.1}Jet selection accuracy}{193}{subsection.F.3.1}%
+\contentsline {subsection}{\numberline {F.3.2}Cases where pairAGraph got the correct jets and the baseline selected the wrong jets}{193}{subsection.F.3.2}%
+\contentsline {subsection}{\numberline {F.3.3}What extra information was pairAGraph learning?}{196}{subsection.F.3.3}%
+\contentsline {subsection}{\numberline {F.3.4}Pairing accuracy}{196}{subsection.F.3.4}%
+\contentsline {subsection}{\numberline {F.3.5}Visualization of the attention weights}{197}{subsection.F.3.5}%
+\contentsline {section}{\numberline {F.4}Impact on the background}{197}{section.F.4}%
+\contentsline {subsection}{\numberline {F.4.1}Impact on the massplanes}{197}{subsection.F.4.1}%
+\contentsline {subsection}{\numberline {F.4.2}Impact on the limits}{197}{subsection.F.4.2}%
+\contentsline {subsection}{\numberline {F.4.3}Impact on the limits with systematics}{197}{subsection.F.4.3}%
+\contentsline {section}{\numberline {F.5}Related work and future prospects}{197}{section.F.5}%
+\contentsline {chapter}{\numberline {G}$t\bar {t}$ aware reweighting}{200}{appendix.G}%
+\contentsline {section}{\numberline {G.1}Motivation}{200}{section.G.1}%
+\contentsline {section}{\numberline {G.2}Fitting $t\bar {t}$ templates}{201}{section.G.2}%
+\contentsline {subsection}{\numberline {G.2.1}Prescription}{201}{subsection.G.2.1}%
+\contentsline {subsection}{\numberline {G.2.2}Fit results 4b}{202}{subsection.G.2.2}%
+\contentsline {subsection}{\numberline {G.2.3}Fit results 3b1f}{206}{subsection.G.2.3}%
+\contentsline {section}{\numberline {G.3}Pure QCD reweighting}{208}{section.G.3}%
+\contentsline {subsection}{\numberline {G.3.1}Mathematical formulation}{208}{subsection.G.3.1}%
+\contentsline {subsection}{\numberline {G.3.2}Experiments}{209}{subsection.G.3.2}%
+\contentsline {subsection}{\numberline {G.3.3}Outlook}{211}{subsection.G.3.3}%

@@ -1,4 +1,9 @@
 \chapter{Background estimation}
+\label{ch:bkg-est}
+
+\begin{chapquote}{Georges Aad (editorial board chair for collaboration internal review)}
+{This IS the analysis.}
+\end{chapquote}
 
 Although the 4b final state is tantalizingly attractive because of the highest branching ratio fraction for the signal,  the fully hadronic final state also means that we have larger backgrounds to cope with. QCD backgrounds are notoriously difficult to simulate from first principles, so we need can't rely on simulation to estimate our background estimate, and instead need to rely on data driven methods to form an estimate of the background in a (blinded) signal region.
 
@@ -29,12 +34,28 @@ There are two main proportions of background that we have: QCD and $t\bar{t}$, w
 		\label{tab:ttbar-percent-VBF}
 	}
 	\caption{Percentage of the data-driven background estimate expected to be composed of \ttbar events for the ggF 4b (left) and VBF 4b categories (right).}
+	\label{tab:ttbar-proportion}
 \end{table}
 
 
-The key idea of the background estimate is to reweight the distributions in a lower \Pqb-tag region into a higher \Pqb-tag region by deriving these reweighting maps in dedicated control regions. The task of accurately estimating this background and assigning an appropriate error bar is the key to this analysis, and is the focus of this chapter. \Sect{\ref{sec:rw-overview}} overviews the nominal background estimate strategy, while \Sect{\ref{sec:bkg-val-plots}} shows some of the validation plots that the method is working. the errors that we assign to the nominal estimate are shown in \Sect{\ref{sec:bkg-systs}} and the tests of the methodology in different validation regions are discussed in \Sect{\ref{sec:bkg-val-regns}}
+The key idea of the background estimate is to reweight the distributions in a lower \Pqb-tag region into a higher \Pqb-tag region by deriving these reweighting maps in dedicated control regions. The task of accurately estimating this background and assigning an appropriate error bar is the key to this analysis -- and is the focus of this chapter. 
+\Sect{\ref{sec:rw-overview}} overviews the nominal background estimate strategy, while \Sect{\ref{sec:bkg-val-plots}} shows some of the validation plots that the method is working. the errors that we assign to the nominal estimate are shown in \Sect{\ref{sec:bkg-systs}} and the tests of the methodology in different validation regions are discussed in \Sect{\ref{sec:bkg-val-regns}}
 
+Since the different \Pqb-tagging regions define different control regions for defining the background estimate or assessing a systematic, in \Tab{tab:b-tag-cat} we provide a table of the different \Pqb-tag regions that will be discussed here.
 
+\begin{table}[!htbp]
+	\centering
+	  \begin{tabularx}{\textwidth}{l|X|l}
+	  Notation     & Definition & Usage \\
+	  \toprule
+	  2b    & Exactly two central jets tagged with DL1r 77\% WP & Background estimation \\ \hline
+	  3b1f  & Exactly three central jets tagged with DL1r 77\% WP and no central jets passing the 85\% WP & Background estimate systematic \\ \hline
+	  4b    & At least four central jets tagged with DL1r 77\% WP & Signal region \\
+	  \bottomrule
+	  \end{tabularx}
+	\caption{Different analysis definitions based on number of \Pqb-tags.}
+	\label{tab:b-tag-cat}
+  \end{table}%
 
 \clearpage
 \input{chapters/analysis-subsecs/rw-overview}

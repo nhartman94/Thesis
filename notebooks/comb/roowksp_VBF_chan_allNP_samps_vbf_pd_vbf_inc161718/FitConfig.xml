@@ -1,0 +1,8 @@
+<!DOCTYPE Combination SYSTEM "HistFactorySchema.dtd">
+<Combination OutputFilePrefix="workspaces/comb/roowksp_VBF_chan_allNP_samps_vbf_pd_vbf_inc161718/config/FitConfig">
+  <Input>workspaces/comb/roowksp_VBF_chan_allNP_samps_vbf_pd_vbf_inc161718/config/FitConfig_vbf_-1_dEta_1.xml</Input>
+  <Input>workspaces/comb/roowksp_VBF_chan_allNP_samps_vbf_pd_vbf_inc161718/config/FitConfig_vbf_-1_dEta_2.xml</Input>
+  <Measurement Name="vbf_meas" Lumi="1.0" LumiRelErr="0.1" ExportOnly="True">
+    <POI>mu_HH mu_HH_ggF mu_HH_VBF</POI>
+    <ParamSetting Const="True">Lumi</ParamSetting></Measurement>
+  </Combination>

@@ -42,7 +42,7 @@ where $x$ is a set of features characterizing the kinematics of the event, speci
 	Energy of the subleading HC	& & \checkmark  \\
 	\hline
 	\end{tabular}
-	\caption{\label{tbl:rw-vars} Set of input variables used for the 2\Pqb to 4\Pqb reweighting for the ggF and VBF channels. The variables included in the background estimate are denoted with a checkmark.}
+	\caption{Set of input variables used for the 2\Pqb to 4\Pqb reweighting for the ggF and VBF channels. The variables included in the background estimate are denoted with a checkmark.}
 	\label{tab:rw-inputs}
 \end{table}
 
@@ -88,12 +88,13 @@ where $x$ is a set of features characterizing the kinematics of the event, speci
 %\end{table}
 
 
-To enforce positivity of  the weights , we ac NN $Q(x) = \log w(x)$, minimizing the loss function: 
+To enforce positivity of  the weights  we learn NN $Q(x) = \log w(x)$, minimizing the loss function: 
 \begin{equation}
-	\mathcal{L}(Q(x)) = \mathbb{E}_{x\sim p_{2b}} \left[ \exp\left(  \frac{1}{2} Q(x) \right) \right] + \mathbb{E}_{x\sim p_{4b}} \left[ \exp\left(  - \frac{1}{2} Q(x) \right) \right]
+	\mathcal{L}[Q] = \mathbb{E}_{x\sim p_{2b}} \left[ \exp\left(  \frac{1}{2} Q(x) \right) \right] + \mathbb{E}_{x\sim p_{4b}} \left[ \exp\left(  - \frac{1}{2} Q(x) \right) \right]
 \end{equation}
 
-results in a model learning $Q^*(x) = \log w(x)$ (where the loss function is set up in this way to  are positive numbers using the loss function);
+results in a model learning $Q^*(x) = \log w^*(x)$ (where the loss function is set up in this way to  are positive numbers using the loss function);
+(See proof in \sect{\ref{rw-loss-fct}}.)
 
 These mappings are derived in a kinematically similar control region (shown as CR 1 in \Fig{\ref{fig:ggF-massplanes-allYrs-dat-4b-preXwt}}). Then an error on this method from this choice of training region is taken by using an alternative control region (CR 2) and using the difference of the CR1 and CR2 predictions as an error bar.
 
@@ -101,6 +102,11 @@ Applying these reweighting maps in the SR gives us a background estimate of the 
 
 In practice, there is some amount of noisiness due to the initializations of the NNs. To this extent, the NN for each background estimate is retrained 100 times and the average of the weights is taken as the nominal weight.
 Additionally, for each of the NN trainings the CR1 training events have a weight sampled from a Poisson distribution with mean 1 to account for the finite statistics of the training dataset.
+
+\begin{itemize}
+	\item Hyperparameters for the ggF training: 50-50-50
+	\item Hyperparameters for the VBF training: \hl{Need to look up}.
+\end{itemize}
 
 Since we use different triggers between each of the years, the ggF background estimate has a different background estimate derived for each of the three years. Since VBF has two orders of magnitude less statistics than ggF, it was not as sensitive to this effect, so instead for VBF the training was done inclusively for the years with the year passed as an extra variable.
 

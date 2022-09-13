@@ -1,0 +1,60 @@
+\chapter{Statistical techniques}
+
+\section{Hypothesis testing: a qualitiative introduction}
+
+The task of an analysis is to search for a signal in the presence of the plethora of background processes that we also observe at the LHC.
+In the process of "making a discovery" sort of the bread and butter of day-to-day experimental work is the mathematical rigor of setting up
+\begin{enumerate}
+	\item How to characterize the uncertainites of all our experimental parameters that affect our measurement. errors
+\end{enumerate}
+
+From statistics, we know that we \emph{make statements} by doing hypothesis testing testing one hypothesis against another.
+
+We define a ``null hypothesis'' (H0) and an ``alternative hypothesis $H'$, and use the \emph{likelihood} to quantify how likely the null is to be true under the likelihood.
+The only thing we can do in a hypothesis test is reject the null in favor of the alternative, so we set up the null 
+
+When observing a physics process (i.e, in the Higgs discovery) the null hypothesis was that the Higgs boson did not exist, and the alternative hypothesis was that the Higgs boson existed, so the process of ``making a discovery'' meant that we rejected the null and accepted the alternative with ``5 $\sigma''$ significance, of if the null were true (and the Higgs boson did not exist) the probability that the data could look like this is less than 0.000000001. \textcolor{red}{I need to double check the 5 sigma percent value!}
+
+\hl{might be fun to have some plots to demonstrate what this looks like?}
+
+The SM signal that I searched for in my analysis is fantastically low (35 fb), so we don't expect to see it with our current dataset.
+To this end, we instead fix the signal shape and set limits on the rate (or overall normalization) of the signal process. In this case, the null hypothesis becomes that the signal \emph{exists} ``95\%'' \footnote{I'm giving a general description here I will get specific about what test statistic I'm going to use to define this p-value in section 9.3.}
+
+
+\section{The likelihood}
+
+\begin{equation}
+\mathcal{L}(\mu,\theta) = \prod_{j = 1}^N \frac{ \mu s_j + b_j }{n_j !} \prod_{k = 1}^M \frac{ u_k^{m_k} }{m_k! } e^{-u_k}
+\label{eq:likelihood}
+\end{equation}
+
+\begin{itemize}
+\item A.k.a, setting limits verses discerning signal
+\item The likelihood that we set up for a probability distribution
+\end{itemize}
+
+
+
+\section{Test statistic}
+
+
+\begin{equation}
+    \tilde{q}_\mu = 
+    \begin{cases}
+        - 2 \ln{\tilde{\lambda}(\mu)} & \hat{\mu} \le \mu \\
+        0  & \hat{\mu} > \mu
+     \end{cases}
+     \ \ =\ \ 
+     \begin{cases}
+        - 2 \ln{\frac{ \mathcal{L}(\mu, \hat{\hat{\theta}}(\mu))}{\mathcal{L}(0,  \hat{\theta}(0))}} & \hat{\mu} \le 0, \\
+        - 2 \ln{\frac{\mathcal{L}(\mu, \hat{\hat{\theta}}(\mu))}{\mathcal{L}(\hat{\mu}, \hat{\theta} ) }} & 0 \le \hat{\mu} \le \mu, \\
+        0  & \hat{\mu} > \mu.
+     \end{cases}
+\end{equation}
+
+\subsection{Asymptotic approximation}
+
+\subsection{Types of Nuisance parameters that we use}
+
+
+\section{}

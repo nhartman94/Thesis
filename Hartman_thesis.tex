@@ -12,13 +12,25 @@
 \usepackage{useful}
 \usepackage{amsfonts} 
 
+\makeatletter
+\renewcommand{\@chapapp}{}% Not necessary...
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
+
 \usepackage{tabularx}
 
 
-\usepackage{tikz}
 \usepackage{wrapfig}
+\usepackage{xcolor}
 \usepackage{soul}
+\usepackage{tikz}
 \usepackage{adjustbox}
+\usepackage{cancel}
 
 \dept{Physics}
 
@@ -45,11 +57,39 @@
 % Some colors we're using for templates for fonts that it's fun to match for the note
 \definecolor{hh:darkpink}{HTML}{f2385a}
 \definecolor{hh:medturquoise}{HTML}{36b1bf}
+\definecolor{hh:lightturquoise}{HTML}{4ad9d9}
 \definecolor{hh:darkblue}{HTML}{343844}
 \definecolor{hh:darkgreen}{HTML}{125125}
+\definecolor{hh:darkyellow}{HTML}{fdc536}
 \definecolor{hdbs:outrageousorange}{HTML}{fa7e61}
-\definecolor{rebeccapurple}{HTML}{663399}
+\definecolor{dodgerblue}{HTML}{00a2ff}
+\definecolor{deeppink}{HTML}{ea588f}
 
+%matplotlib
+%\definecolor{rebeccapurple}{HTML}{663399}
+%\definecolor{dodgerblue}{HTML}{00A2FF}
+%\definecolor{deeppink}{HTML}{EA588F}
+%\definecolor{gold}{HTML}{FDC536}
+\definecolor{mediumpurple}{HTML}{8450D3}
+\definecolor{limegreen}{HTML}{66D74F}
+
+% Can't have colons in the name definitions of \colorlet
+\definecolor{hh-darkyellow}{HTML}{fdc536}
+\definecolor{hh-darkpink}{HTML}{f2385a}
+\definecolor{hh-medturquoise}{HTML}{36b1bf}
+
+\colorlet{soulyellow}{hh-darkyellow!40}
+\colorlet{soulpink}{hh-darkpink!30}
+\colorlet{soulturquoise}{hh-medturquoise!30}
+\colorlet{soulblue}{dodgerblue!30}
+\colorlet{soulpurple}{mediumpurple!30}
+\colorlet{soulgreen}{limegreen!30}
+%
+\newsavebox\MBox
+\newcommand\Cline[2][red]{{\sbox\MBox{$#2$}%
+  \rlap{\usebox\MBox}\color{#1}\rule[-1.2\dp\MBox]{\wd\MBox}{0.5pt}}}
+
+\newcommand\Eq[1]{Eq.~#1}
 
 \begin{document}
 
@@ -60,42 +100,48 @@
 \secondreader{Patricia Burchat}
 \thirdreader{Michael Peskin} 
  
-%\beforepreface
-%
-%\input{Preface}
-%\input{Acknowledgements}
-%
-%\afterpreface
-%
-%\input{chapters/intro}
-%\input{chapters/theory}
-%\input{chapters/LHC}
-%\input{chapters/ATLAS}
-%
-%\input{chapters/eventReco}
-%\input{chapters/ftag}
-%
-%\chapter{Statistical techniques}
-%
-%\input{chapters/hh-phys}
-%\input{chapters/Analysis-selection}
+\beforepreface
+
+\input{Preface}
+\input{Acknowledgements}
+
+\afterpreface
+
+\input{chapters/intro}
+\input{chapters/theory}
+\input{chapters/LHC}
+\input{chapters/ATLAS}
+
+\input{chapters/eventReco}
+\input{chapters/ftag}
+
+\input{chapters/stats}
+
+\input{chapters/hh-phys}
+
+\def\kvv{$\kappa_{2V}$}
+\def\kv{$\kappa_V$}
+ 
+\input{chapters/Analysis-selection}
 \input{chapters/bkg-est}
 
-%\input{chapters/results}
-%\chapter{Conditional generative models for data-driven background modeling}
-%
-%\input{chapters/conclusion}
-%
-%\appendix
-%
-%\chapter{Tracking optimizations impact on flavor tagging}
-%\chapter{Reweighting loss function}
-%\chapter{Further statistics fundamentals}
-%\chapter{Gaussian Processes}
-%\chapter{ML for jet $\rightarrow$ parton assignment}
+\input{chapters/results-ch}
 
+\input{chapters/flows}
+\input{chapters/conclusion}
 
-...
+\appendix
+
+\input{chapters/ftag-subsecs/tracking-opt}
+
+\input{chapters/analysis-subsecs/rw-loss-fct}
+\chapter{Further statistics fundamentals}
+\chapter{Gaussian Processes}
+\input{chapters/stats-app}
+
+\input{chapters/pairAGraph}
+\input{chapters/ttbar-rw}
+
 \bibliographystyle{plain}
 \bibliography{mybib}
 \end{document}

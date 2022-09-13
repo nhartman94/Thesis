@@ -1,0 +1,47 @@
+#: table_doi: 10.17182/hepdata.111124.v2/t9
+#: name: Table 9
+#: description: Cumulative signal acceptance times efficiency as a function of the resonance mass for various selection steps in the boosted channel. The efficiencies of the three b-tag categories are shown for the spin-2 scenario; this efficiency is obtained after the other selection steps including the SR definition. The signal efficiency in the 4b region has a maximum around 1.5 TeV. Above that value the track-jets start to merge together, and for the highest resonance masses the 2b category becomes the most efficient.
+#: data_file: data9_boosted_efficiency_categorization_spin2.yaml
+#: keyword reactions: P P --> HIGGS HIGGS --> BQ BQBAR BQ BQBAR
+#: keyword observables: N
+#: keyword cmenergies: 13000
+#: keyword phrases: Events | Proton-Proton | Events | resonance | BSM | Higgs boson | Higgs boson pair | bbbb | 4b
+Resonance Mass [TeV],2b SR (spin-2) [Acceptance x Efficiency]
+0.9,0.010388289666901881
+1.0,0.02005441833735335
+1.1,0.028302939376576228
+1.2,0.03165036664536805
+1.4,0.03689266755259936
+1.6,0.039965822877584274
+2.0,0.04813178643534531
+2.5,0.05815436338809596
+3.0,0.06198683468935379
+4.0,0.06675971127995162
+5.0,0.06330975558796459
+
+Resonance Mass [TeV],3b SR (spin-2) [Acceptance x Efficiency]
+0.9,0.023884572856586905
+1.0,0.048504939191571034
+1.1,0.06478184398299805
+1.2,0.07355784262064527
+1.4,0.08602622467128986
+1.6,0.09102425318612298
+2.0,0.09265051319050081
+2.5,0.08299532032569132
+3.0,0.0709471940540912
+4.0,0.05049520005018512
+5.0,0.037514719694409476
+
+Resonance Mass [TeV],4b SR (spin-2) [Acceptance x Efficiency]
+0.9,0.008412171530133856
+1.0,0.016457989629132527
+1.1,0.023196373561707912
+1.2,0.03215545791926348
+1.4,0.047661868175598504
+1.6,0.04917238712587844
+2.0,0.04250680804717216
+2.5,0.030963419843629006
+3.0,0.020700942468567952
+4.0,0.010554211793045963
+5.0,0.008024585439738127
+
