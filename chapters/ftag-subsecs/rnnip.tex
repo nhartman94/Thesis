@@ -2,19 +2,12 @@
 
 \def\figpath{figures/ftag/dips-note/}
 
-Tracks are reconstructed from energy deposits, or hits, in the inner detector system and are required to pass a quality selection: 
-each track must have at least 7 hits in the silicon layers (pixel and SCT, where dead sensors are not penalized), 
-no more than two missing hits where expected in the silicon layers, 
-no more than one hit shared by multiple tracks, 
-at least one hit in the pixel detector, and $|\eta| < 2.5$. 
-
 %\subsection{Algorithm overview}
 
 % from dips intro
 % The choice of the RNN architecture was motivated by the capability to operate over jets with variable numbers of tracks, while the use of neural networks provided the flexibility to add more information about the track kinematics into the tagging discriminant.
 %while avoiding the "curse of dimensionality" inherit when using histograms to build up likelihood templates \cite{papamakarios2019neural}.
-%By modelling the jet as a sequence (or an ordered set of tracks) the RNN can operate over an arbitrary number of associated 
-
+%By modeling the jet as a sequence (or an ordered set of tracks) the RNN can operate over an arbitrary number of associated 
 
 RNNs operate on variable length \emph{sequences} by iterating over the sequence elements, processing them with a neural network, and using previously processed elements when processing new ones. 
 It then outputs a fixed size vector that can be used for classification. 
@@ -37,6 +30,7 @@ An implementation of the RNNIP algorithm is used as the baseline for comparison 
 
 %\subsection{Optimizations}
 
+To avoid classification based on the differing kinematic spectra of the jet classes, the $\pT$ spectra for $b$-jets and $c$-jets is reweighted to the light-flavour jet spectra, as described in reference~\cite{ATL-PHYS-PUB-2017-003}.
 
 \begin{table}[h!]
   \centering

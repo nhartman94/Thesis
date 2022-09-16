@@ -1,0 +1,48 @@
+
+
+%\begin{sidewaystable}[bth]
+\begin{table}
+\centering
+\caption{ A summary of all the data samples used in the analysis. For each control sample, the variations from the nominal analysis are noted explicitly. }
+\begin{tabular}{ p{2.4cm} p{6.5cm} p{5.8cm} }
+\toprule
+
+\multicolumn{1}{l}{\textbf{Data Sample}} & \multicolumn{1}{l}{\textbf{Definition}}& \multicolumn{1}{l}{\textbf{Usage}} \\
+
+\hline
+
+%Control Region (CR) & Events with $\Xhh > 1.6$ and within the circle defined by: $\sqrt{ \left(m_{\PH1} - 1.05 \cdot \SI{124}{\GeV}\right)^2 +  \left(m_{\PH2} - 1.05 \cdot \SI{117}{\GeV}\right)^2 } = \SI{45}{\GeV} $   & Background estimation (ggF and VBF) \\
+Signal Region (SR) & Events with $\Xhh < 1.6$    & Signal Region definition in the $m_{\PH1}$-$m_{\PH2}$ plane \\
+{}&{}&{}\\
+
+Control Region (CR) & Events with $\Xhh > 1.6$ and $R_{\text{CR}}<45$   & Control Region definition in the $m_{\PH1}$-$m_{\PH2}$ plane for background estimation (ggF and VBF) \\
+{}&{}&{}\\
+
+Shifted validation regions & Shift the center of the SR in the $m_{\PH1}$-$m_{\PH2}$ plane to avoid overlap with the nominal SR & Background estimation validation (ggF only) \\
+
+{}&{}&{}\\
+\hline
+{}&{}&{}\\
+
+$4\Pqb$ &  Events with at least 4 \Pqb-tagged central jets & Final analysis sample (ggF and VBF) \\
+{}&{}&{}\\
+
+%$2\Pqb$ & Remove the $\geq 4$ \Pqb-tagged central jets selection and require exactly 2 \Pqb-tagged central jets plus two additional untagged central jets & Background estimation (ggF and VBF) \\
+$2\Pqb$ &  Events with exactly 2 \Pqb-tagged central jets plus at least two additional untagged central jets & Background estimation (ggF and VBF) \\
+{}&{}&{}\\
+
+%\bbbf & Remove the $\geq 4$ \Pqb-tagged central jets selection and require exactly 3 \Pqb-tagged central jets plus one central jet failing a looser \Pqb-tagging requirement & Background estimation validation (ggF and VBF), additional background modeling uncertainty (ggF only) \\
+\bbbf &  Events with exactly 3 \Pqb-tagged central jets plus at least one central jet failing a looser \Pqb-tagging requirement & Background estimation validation (ggF and VBF), additional background modeling uncertainty (ggF only) \\
+{}&{}&{}\\
+
+\hline
+{}&{}&{}\\
+
+Reverse \deta & $2\Pqb$ and $4\Pqb$ events with $\deta>1.5$ & Background estimation validation (ggF only) \\
+{}&{}&{}\\
+
+\bottomrule
+\end{tabular}
+\label{tab:cr_summary}
+%\end{sidewaystable}
+\end{table}

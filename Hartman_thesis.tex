@@ -12,6 +12,7 @@
 \usepackage{useful}
 \usepackage{amsfonts} 
 
+
 \makeatletter
 \renewcommand{\@chapapp}{}% Not necessary...
 \newenvironment{chapquote}[2][2em]
@@ -24,13 +25,13 @@
 
 \usepackage{tabularx}
 
-
 \usepackage{wrapfig}
 \usepackage{xcolor}
 \usepackage{soul}
 \usepackage{tikz}
 \usepackage{adjustbox}
 \usepackage{cancel}
+\usepackage{underscore}
 
 \dept{Physics}
 
@@ -66,7 +67,7 @@
 \definecolor{deeppink}{HTML}{ea588f}
 
 %matplotlib
-%\definecolor{rebeccapurple}{HTML}{663399}
+\definecolor{rebeccapurple}{HTML}{663399}
 %\definecolor{dodgerblue}{HTML}{00A2FF}
 %\definecolor{deeppink}{HTML}{EA588F}
 %\definecolor{gold}{HTML}{FDC536}
@@ -101,10 +102,8 @@
 \thirdreader{Michael Peskin} 
  
 \beforepreface
-
 \input{Preface}
 \input{Acknowledgements}
-
 \afterpreface
 
 \input{chapters/intro}
@@ -118,11 +117,10 @@
 \input{chapters/stats}
 
 \input{chapters/hh-phys}
-
 \def\kvv{$\kappa_{2V}$}
-\def\kv{$\kappa_V$}
- 
+\def\kv{$\kappa_V$} 
 \input{chapters/Analysis-selection}
+
 \input{chapters/bkg-est}
 
 \input{chapters/results-ch}
@@ -135,13 +133,15 @@
 \input{chapters/ftag-subsecs/tracking-opt}
 
 \input{chapters/analysis-subsecs/rw-loss-fct}
-\chapter{Further statistics fundamentals}
-\chapter{Gaussian Processes}
+
 \input{chapters/stats-app}
 
 \input{chapters/pairAGraph}
 \input{chapters/ttbar-rw}
 
-\bibliographystyle{plain}
-\bibliography{mybib}
+\input{chapters/flows-bkg-val}
+\input{chapters/flows-opt}
+
+\printbibliography
+
 \end{document}

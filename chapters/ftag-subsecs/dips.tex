@@ -47,16 +47,8 @@ The timing performance comparison between DIPS and RNNIP is further discussed in
 \subsection{Implementation details} 
 \label{subsec:algdetails}
 
-All algorithms are trained with a sample of simulated $t\bar{t}$ events (described in Section~\ref{sec:datasets}) for multi-class classification between $b$-jets, $c$-jets and light-flavour jets. To avoid classification based on the differing kinematic spectra of the jet classes, the $\pT$ spectra for $b$-jets and $c$-jets is reweighted to the light-flavour jet spectra, as described in reference~\cite{ATL-PHYS-PUB-2017-003}.
 
-% Models are trained as multi-class classifiers for $b$-, $c$-, and light-jets. [Rafael: repetition from above]
-The class probabilities predicted by the model outputs ($p_b$, $p_c$, and $p_l$), are combined into a $b$-tagging discriminant:
-\begin{equation}
- D_b = \log \frac{p_b}{(1-f_c) p_l + f_c p_c}
- \label{eq:dipsdiscriminant}
-\end{equation}
-where $f_c$ is a free parameter that balances between the rejection of light-flavour vs $c$-jets for a given efficiency of selecting $b$-jets, and can be optimized post-training. 
-A value of $f_c = 0.07$ was used in these studies  as this is representative of the fraction of $c$-jets relative to non $b$-jets in $t\bar{t}$ events. 
+In this section, algorithms are just trained on $t\bar{t}$ simulated events (described in Section~\ref{sec:datasets}) for multi-class classification between $b$-jets, $c$-jets and light-flavour jets, with the \Pqb and \Pqc-jet distributions reweighted into the light jet distribution. 
 
 For the timing comparisons in Section~\ref{subsec:timing}, the same input features are used for both RNNIP and the DIPS. 
 % Additional input features are included for the Optimised DIPS algorithm, described in Section~\ref{subsec:optimisation}. 

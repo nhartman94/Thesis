@@ -2,25 +2,58 @@
 
 \subsection{High level taggers: DL1 series}
 
+
+The task of $b$-tagging is \emph{almost} as old as collider physics.
+These low level algorithms characterizing the impact parameters and vertices have been around since the inception of ATLAS, and the RNN development and optimization studies were also before my time.
+However, a part of taking over the maintenance of the RNN for my ATLAS qualification task, I produced the first RNNIP training that was used by the whole collaboration.
+
+The developments that we worked together on went beyond just my own work, as the high level tagger that aggregated information from the low level is now a NN-based solution. The Run 2 recommended tagger is the DL1r algorithm, which includes inputs from the Low-Level taggers described in \Sect{\ref{sec:low-level}}, with the inputs summarized below:
+
+
 We combine the low level taggers into a high-level one, the DL1r algorithm, combining information from the low-level taggers:
 \begin{itemize}%[noitemsep]
-	\item The IP2D and IP3D: $\log p_b$
-	\item The RNNIP outputs: $p_b$, $p_c$, and $p_l$
-	\item The SV1 vertex information (variables in \Tab{\ref{tab:sv1-inputs}})
-	\item The JF displaced vertices characteristics, \Tab{\ref{tab:sv1-inputs}}.
+	\item The jet \pt and $\eta$ (to learn about the correlations between the jet's energy with the low-level tagger decisions
+	\item \textbf{IP2D and IP3D}: Since the Neyman Pearson lemma says that the optimal discriminator between two probability distributions is the ratio of probabilities, we pass the $\log p_b / p_c$, $\log p_b / p_l$, and $\log p_c / p_l$ as DL1r NN inputs (2 IP taggers x 3 inputs = 6 inputs) 
+	\item \textbf{RNNIP}: For this round of recommendations, we have a two step tagger training process. I first optimized the hyperparameters of the RNN and then the DL1r algrothm accepted as inputs the outputs RNNIP outputs: $p_b$, $p_c$, and $p_l$ (3 inputs)
+	\item \textbf{SV1}: vertex information (variables in \Tab{\ref{tab:sv1-inputs}}) (8 inputs)
+	\item \textbf{JF}: displaced vertices characteristics, \Tab{\ref{tab:jf-inputs}} (20 inputs).
 \end{itemize} 
 
+For the low-level algorithms, sometimes the algorithms don't always ``succeed'' or have a non-trivial output (i.e, no tracks were selected by the tight selection cuts of the IPXD algorithms, or the vertex fit failed to find a secondary vertex). To let the NN know that these are cases where the low-level algorithm is just passing a default value, a boolean variable is passed if this algorithm has default values. This adds an additional 5 inputs: \texttt{IP2D\_isDefault}, \texttt{IP3D\_isDefault}, \texttt{SV1\_isDefault}, \texttt{JF\_isDefault}, and \texttt{JFc\_isDefualt} (since the \Pqc-tagging variables are only calculated when JF finds exactly one SV. 
+For the DL1r training, the default values are set to the mean of the distribution (to be uninformative for the NN discrimination), except for variables where it makes physical sense to set it to 0 for no SV being found (such as the mass or the energy of the SV is set to 0 if no SV is found).
+This makes the total \# of input variables:
 
-The comparisons that we'll show are again
+\begin{center}
+\# DL1r inputs = 2 \small{(jet \pt, $\eta$)} + 6 (IPXD) + 3 (RNNIP) + 8 (SV1) + 20 (JF) + 5 (boolean defaults) = 44
+\end{center}
 
-\begin{itemize}
-%\itemsep{0em}
-	\item Explain architecture, optimization
-	\item Explain default values
-	\item pre-processing:  mean 0 and standard deviation 1 (except for the binary check variables)
-\end{itemize} 
+As is common in ML applications, these inputs are then pre-processed to have zero mean and unit variance (except for the boolean default indication variables).
+
+The architecture used was optimized in a grid search and has 8 hidden layers with 256, 128, 60, 48, 36, 24, 12, and 6 hidden nodes per layer, with ReLU non-linearities. A softmax output layer with 3 output nodes for the \Pqb, \Pqc, and light jets. The categorical cross entropy loss is used, and the parameters of the NN are optimized with a stochastic gradient descent optimizer adam \cite{adam} with a learning rate of 0.01, and a batch size of 15,000 jets.
+
+As mentioned in the RNNIP section, we don't want to make classification decisions just based on the input training kinematics.
+Although for the RNNIP training, we ameliorated this dependence by reweighting the \Pqb and \Pqc-jet \pt distributions to match the light jet distribution, the DL1r training setup uses (what I believe is) a better paradigm of resampling the input jets.
+
+The input training sample discretizes the jets in the (\pt, $\eta$) plane, and then samples from the jet flavor distributions to have a uniform number of events across the  (\pt, $\eta$) spectrum and across the jet flavors.
+In this procedure - 22~million jets are used for the input training for DL1r, with an equal proportion of $b$, $c$, and light jets.
+
+The comparisons of the DL1r tagger is made against two other taggers: DL1r, which uses the same inputs as DL1r -- except for the RNNIP variables -- and MV2, which uses the same inputs as DL1, but is a BDT-based tagger instead of a NN based one.
+
+
+\hl{Insert smth about how DL1 is more space efficient than MV2}
+
 
 \subsection{Evaluating tagger performance}
+
+\textbf{I might want to put this in the RNNIP section though -- depending on if I show any roc curves there or not.}
+
+The class probabilities predicted by the model outputs ($p_b$, $p_c$, and $p_l$), are combined into a $b$-tagging discriminant:
+\begin{equation}
+ D_b = \log \frac{p_b}{(1-f_c) p_l + f_c p_c}
+ \label{eq:dipsdiscriminant}
+\end{equation}
+where $f_c$ is a free parameter that balances between the rejection of light-flavour vs $c$-jets for a given efficiency of selecting $b$-jets, and can be optimized post-training. 
+A value of $f_c = 0.07$ was used in these studies  as this is representative of the fraction of $c$-jets relative to non $b$-jets in $t\bar{t}$ events. 
 
 
 \subsection{PFlow optimization}
@@ -110,6 +143,14 @@ Dedicated retraining on new pflow jet collection
 Plus the RNN improvements from this year
 
 
+An illustration of how this newly retrained RNN compares to some other low level taggers is shown in \Fig{\ref{fig:rnnip-cf-sv1-jf}}.
+
+\begin{figure}
+\centering
+	\includegraphics[width=0.7\textwidth]{{figures/ftag/PFlow\ Trainings/roc_rnnip_kine_DL1r_ttbar}}
+	\caption{Comparision of the performance of the low level taggers \cite{ANA-FTAG-2019-07}}
+\label{fig:rnnip-cf-sv1-jf}
+\end{figure}
 
 
 \textbf{DL1r results}
@@ -173,6 +214,15 @@ Plus the RNN improvements from this year
 \FloatBarrier
 \clearpage
 \subsection{VR track jets optimization}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.6\textwidth]{figures/ftag/VR trainings/vr-ftag-dR-cuts}
+  \caption{Comparison of the $\Delta R$ track cuts that (1) define the jet axis for the VR track jet (cyan) and (2) the tracks used as input to the FTAG algorithms (pink).}
+  \label{fig:pt-VR-pflow}
+\end{figure}
+
+
 
 \hl{I had to have had a dR matching in this plot \ldots let's look up what it was!}
 

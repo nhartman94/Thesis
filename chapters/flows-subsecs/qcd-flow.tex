@@ -1,0 +1,45 @@
+\section{QCD flow}
+\label{sec:qcd-flow}
+
+\subsection{Theortical motivation}
+\label{subsec:qcd-theory}
+
+We're modelling the 4b discriminant by modelling the joint probability distribution using:
+\begin{equation}
+p(  \log p_{T,h1}, \log p_{T,h2}, \eta_{h1}, \eta_{h2}, \log \left( \pi - \Delta \phi_{hh} \right)  , X_{Wt} | yr, m_{h1}, m_{h2}) \cdot p(m_{h1}, m_{h2}) 
+\end{equation}
+
+where the conditional probability is modelled with a neural spline flow and the massplane is modelled with a GP.
+
+To train a pure QCD flow, i.e, we want to train a model such that $p_\theta (x)$ models the QCD distribution.
+
+My loss function is (assuming we have a pure sample of QCD events):
+
+\begin{equation}
+\mathcal{L}_{QCD} = \mathbb{E}_{x \sim p_{QCD}(x)} [- \log p_{\theta} (x)] 
+\end{equation}
+
+Since we don't have a pure QCD sample to sample $p_{QCD}$ from, so I'm going to solve for $\mathbb{E}_{x \sim p_{QCD}(x)} [- \log p_{\theta} (x)]$ to find what loss function corresponds to training $p_\theta(x)$ to approximate $p_{QCD}$.
+
+Consider data to follow a mixture model $p_{data} = (1 -\alpha)\cdot p_{QCD} + \alpha\cdot  p_{t\bar{t}}$. Suppose that my mini-batches over data are of size $m$ and $m = m_{QCD}+m_{t\bar{t}}$, where $m_{QCD}$ and $m_{t\bar{t}}$ are the number of QCD and $t\bar{t}$ events in the mini-batch.
+
+\begin{align}
+\mathbb{E}_{x \sim p_{data}} [-\log p_\theta (x)] &\approx \frac{1}{m}\sum_{i = 1}^m -\log p_\theta (x) \\
+&= \frac{1}{m} \left[ \sum_{i = 1}^{m_{QCD}} \left(-\log p_\theta (x)\right) + \sum_{i = 1}^{m_{t\bar{t}}} \left(-\log p_\theta (x)\right)  \right] \\
+&=  \frac{m_{QCD}}{m} \cdot \frac{1}{m_{QCD}} \sum_{i = 1}^{m_{QCD}} \left(-\log p_\theta (x)\right) + \frac{m_{t\bar{t}}}{m} \cdot \frac{1}{m_{t\bar{t}}}\sum_{i = 1}^{m_{t\bar{t}}} \left(-\log p_\theta (x)\right) \\
+&\approx (1- \alpha) \cdot \left( \frac{1}{m_{QCD}} \sum_{i = 1}^{m_{QCD}} \left(-\log p_\theta (x)\right) \right) + \alpha \cdot \left( \frac{1}{m_{t\bar{t}}}\sum_{i = 1}^{m_{t\bar{t}}} \left(-\log p_\theta (x)\right) \right)\\
+&\approx (1-\alpha) \cdot \mathbb{E}_{x \sim p_{QCD}} [-\log p_\theta (x)] + \alpha \cdot \mathbb{E}_{x \sim p_{t\bar{t}}} [-\log p_\theta (x)]
+\end{align}
+
+now we can solve for the $\mathbb{E}_{x \sim p_{QCD}}[-\log p_\theta (x)]$ term that we were interested in.
+
+\begin{equation}
+\mathbb{E}_{x \sim p_{QCD}}[-\log p_\theta (x)] = \frac{1}{1-\alpha}\cdot \left\{ \mathbb{E}_{x \sim p_{data}}[-\log p_\theta (x)] - \alpha \cdot \mathbb{E}_{x \sim p_{t\bar{t}}}[-\log p_\theta (x)] \right\}
+\end{equation}
+
+Then for the GP massplane fit, instead of fitting the (blinded) data massplane directly we subtract the $t\bar{t}$ massplanes from the data massplane to fit the (blinded) QCD massplane.
+
+\subsection{Results}
+\label{subsec:qcd-results}
+
+\textcolor{red}{I think I need to redo the shifted SR pure QCD results, b/c rn the corner of the data that is blinded in the SR is still in here.}

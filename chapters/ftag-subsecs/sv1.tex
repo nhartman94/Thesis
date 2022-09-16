@@ -15,7 +15,7 @@ Set of input tracks (preselection):
 	\item Also - only take the 25 highest \pt tracks inside of the jet (helped for reducing the reconstruction of vertices from a random crossing of tracks at high jet \pt \cite[ATL-PHYS-PUB-2017-011].   
 \end{itemize}
 
-These track pre-selection cuts are looser than the IPXD (and RIP) algorithms because the next step of selecting the tracks originating from the same point in space acts as another cut on the input tracks. The track \ldots
+These track pre-selection cuts are looser than the IPXD (and RNNIP) algorithms because the next step of selecting the tracks originating from the same point in space acts as another cut on the input tracks. The track \ldots
 
 
 
@@ -69,13 +69,13 @@ For a true displaced decay, this secondary vertex will have properties consisten
 
 \begin{table}[h!]
   \centering
-    \begin{tabular}{p{2cm} | p{12cm}  }  
+    \begin{tabular}{p{4cm} | p{10cm}  }  
       \textbf{Input} & \textbf{Description}  \\
       \hline
       \hline
   	 $m$ & Invariant mass of the tracks reconstructed in the secondary vertex \\
 	 $f_E$ &The energy of the SV over the energy of the jet \\
-	 $\Delta R(\vec{p}_{jet},\vec{r_{SV}} - \vec{r_{PV}})$ & Opening angle between the jet and the SV flight axis \\
+	 $\Delta R(\vec{p}_{jet},\vec{r}_{SV} - \vec{r}_{PV})$ & Opening angle between the jet and the SV flight axis \\
 	 $L_{xy}$ & SV transverse distance from the PV \\
 	 $L_{xyz}$ & SV distance from the PV \\
  	 $S_{xyz}$ & Significance of the displacement of the SV: $L_{xyz} / \sigma_{xyz}$ \\
@@ -83,6 +83,6 @@ For a true displaced decay, this secondary vertex will have properties consisten
 	$n_{2-trk vtx}$ & Number of 2 track vertices before the vertex fit \\
     \end{tabular}
     \caption{Features from the SV1 reconstruction that are fed as input to the DL1r tagger.}
-    \label{table:jf-inputs}
+    \label{tab:sv1-inputs}
 \end{table}
 

@@ -5,13 +5,25 @@
 {This IS the analysis.}
 \end{chapquote}
 
-Although the 4b final state is tantalizingly attractive because of the highest branching ratio fraction for the signal,  the fully hadronic final state also means that we have larger backgrounds to cope with. QCD backgrounds are notoriously difficult to simulate from first principles, so we need can't rely on simulation to estimate our background estimate, and instead need to rely on data driven methods to form an estimate of the background in a (blinded) signal region.
+\noindent
+\begin{minipage}{0.38\textwidth}
+Although the 4b final state is tantalizingly attractive because of the highest \HH branching ratio,  the fully hadronic final state also means dealing with larger backgrounds. This is illustrated in \Fig{\ref{fig:hh-chan-breakdown}} which shows a comparison between the signal and backgrounds for the three most sensitive HH channels: $bb\gamma\gamma$, $bb\tau\tau$, and $4b$, and demonstrates the large anticipated backgrounds with the 4b final state.
 
-%As Table X shows...
-%\hl{It would be really nice to have a table to show the S / B yields for the main HH channels!! (or at least the 3 main ones!)}
-% The SLT channel of bbtau tau kind of fucks this up - so I'm going to need to think about how to emphasize this point better!
+The sheer number of background events is not the only issue. Our dominant background comes from QCD processes initiated that are notoriously difficult to simulate from first principles, so we can't rely on Monte Carlo for our background, and instead rely on data-driven methods to estimate the background in a (blinded) signal region.
+\end{minipage}
+\hspace{0.02\textwidth}
+\begin{minipage}{0.60\textwidth}
+\centering
+\includegraphics[width=.8\textwidth]{figures/my_dihiggs/chan_cf_threshold_9}
+\captionof{figure}{ The signal, background, $S/B$ and (quadrature summed) $S/\sqrt{B}$ the most sensitive \HH channels: $bb\gamma\gamma$, $bb\tau \tau$, and $4b$ \cite{ATLAS-CONF-2021-016, ATLAS-CONF-2021-030, ATLAS-CONF-2022-035}. For this heuristic comparison, a loose cut on the $bb\tau\tau$ MVA discriminants was used to mimic the $bb\gamma\gamma$ BDT categories.}
+\label{fig:hh-chan-breakdown}
+\end{minipage}
 
-There are two main proportions of background that we have: QCD and $t\bar{t}$, with the estimated relative proportions shown in \Tab{\ref{tab:ttbar-percent-ggF-4b}} and \ref{tab:ttbar-percent-VBF} for ggF and VBF, respectively. Since the $t\bar{t}$ proportion is only 10\% of the background, our background estimate is derived inclusively for the QCD and $\tbar{t}$ proportions.
+% It would be nice to include a plot showing how simulation doesn't do a good job estimating our data
+% Also - it would be nice to have illlustration of what QCD processes can "fake" these backgrounds 
+% -> I think Todd had a useful paper related to this??
+
+Another background that we have is $t\bar{t}$, which accounts for $\approx 10\%$ of the background, with proportions relative o the total background shown in \Tab{\ref{tab:ttbar-percent-ggF-4b}} and \ref{tab:ttbar-percent-VBF} for ggF and VBF, respectively. Since this a small contribution, our background estimate is derived inclusively for QCD and $\tbar{t}$ proportions, although as part of this thesis work \App{\ref{app:ttbar-rw}} shows studies for how we can model this contribution separately in the reweighting in future analysis iterations.
 
 \begin{table}[h]
 	\centering
@@ -37,11 +49,10 @@ There are two main proportions of background that we have: QCD and $t\bar{t}$, w
 	\label{tab:ttbar-proportion}
 \end{table}
 
-
-The key idea of the background estimate is to reweight the distributions in a lower \Pqb-tag region into a higher \Pqb-tag region by deriving these reweighting maps in dedicated control regions. The task of accurately estimating this background and assigning an appropriate error bar is the key to this analysis -- and is the focus of this chapter. 
+The key idea of the background estimate used in this analysis is to reweight the distributions in a lower \Pqb-tag region into a higher \Pqb-tag region by deriving these reweighting maps in dedicated control regions. The task of accurately estimating this background and assigning an appropriate error bar is the key to this analysis -- and is the focus of this chapter. 
 \Sect{\ref{sec:rw-overview}} overviews the nominal background estimate strategy, while \Sect{\ref{sec:bkg-val-plots}} shows some of the validation plots that the method is working. the errors that we assign to the nominal estimate are shown in \Sect{\ref{sec:bkg-systs}} and the tests of the methodology in different validation regions are discussed in \Sect{\ref{sec:bkg-val-regns}}
 
-Since the different \Pqb-tagging regions define different control regions for defining the background estimate or assessing a systematic, in \Tab{tab:b-tag-cat} we provide a table of the different \Pqb-tag regions that will be discussed here.
+Since the different \Pqb-tagging regions define different control regions for defining the background estimate or assessing a systematic, in \Tab{\ref{tab:b-tag-cat}} we provide a table of the different \Pqb-tag regions that will be discussed here.
 
 \begin{table}[!htbp]
 	\centering

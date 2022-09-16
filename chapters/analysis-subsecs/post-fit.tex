@@ -14,7 +14,7 @@ I think this is a great place to show the unrolled plots year-by-year. (I might 
 
 Post-fit (ggF) background only fits:
 
-\def\figDir{figures/nr-int-note/unblind_results/V6/}
+
 \foreach \yr in {16,17,18}{
     \begin{figure}[htp]
     	\centering
@@ -40,6 +40,10 @@ Post-fit (ggF) background only fits:
 %\end{figure}
 
 
+The corresponding data, post-fit background and signal yields in the defined analysis categories are shown in \Tab{\ref{tab:yields}}. For the SM ggF signal, the low \Xhh low \deta are the most sensitive categories, while for the SM VBF signal, there is more signal in the high \deta category.
+
+\input{tables/ANA-HDBS-2019-29-PAPER/yields-my-edits}
+
 \textcolor{red}{
 New organization ideas: 
 \begin{itemize}
@@ -55,7 +59,6 @@ Especially $Q_E$ and $Q_S$ in 2016 ggF provide shape variations that particularl
 For the background estimation uncertainties, the nuisance parameter naming scheme is alpha\_\{syst\}\_\{quad\}\_\{year\}.
 For example `alpha\_CR12\_shape\_N\_ggf\_16' stands for `CR12 shape uncertainty North quad in 2016'.
 Note that `Non-Closure 3b1f' doesn't have a split in quadrants.
-From a S+B fit, a correlation matrix is derived and shown in \Fig{\ref{fig:ggf-correlation-matrix-corr-sm}}.
 
 \noindent{VBF cat only fits}
 

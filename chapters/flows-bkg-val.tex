@@ -1,0 +1,98 @@
+\chapter{Flows validation plots}
+
+\def\baseTag{_deta_uo}
+
+
+\subsection{Tables}
+\label{subapp:tables}
+
+
+% It might be fun to see if the norm is better for the flow before the Xwt cut - but the reweighting isn't meaningful here
+%\input{figures/flows/tables/yields_Xwt_cut}
+%\input{figures/flows/tables/norms_Xwt_cut}
+%
+%
+%\input{figures/flows/tables/yields}
+%\input{figures/flows/tables/norms}
+
+% Honestly - I don't think these tables tell me a whole lot
+%\foreach \tag in {_Xwt_cut, }{
+%	\foreach \metric in {chi2_ndf, kl, ks} {
+%		\small{\input{figures/flows/tables/\metric\tag}}
+%		
+%	}
+%}
+
+\input{figures/flows/tables/fitted_len_scales}
+\input{figures/flows/tables/log_likelihoods}
+
+\FloatBarrier
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Reversed deta_hh
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Reversed \texorpdfstring{ $\Delta \eta_{HH}$}{Lg}}
+\label{subapp:rev_deta}
+
+\def\valreg{rev_deta}
+\def\vallabel{reversed $\Delta \eta_{HH}$}
+
+\input{chapters/flows-subsecs/val-plots}
+\FloatBarrier
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Shifted regions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Shifted regions}
+\label{subapp:shifted-regs}
+
+\def\valreg{LL}
+\def\vallabel{lower left SR}
+
+\input{chapters/flows-subsecs/val-plots}
+\FloatBarrier
+
+
+\def\valreg{LR}
+\def\vallabel{lower right SR}
+
+\input{chapters/flows-subsecs/val-plots}
+\FloatBarrier
+
+
+\def\valreg{UR}
+\def\vallabel{upper right SR}
+
+\input{chapters/flows-subsecs/val-plots}
+\FloatBarrier
+
+
+\def\valreg{UL}
+\def\vallabel{upper left SR}
+
+\input{chapters/flows-subsecs/val-plots}
+\FloatBarrier
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 3b1f
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{3b1f}
+\label{subapp:3b1f}
+
+\def\valreg{3b1f}
+\def\vallabel{3b1f SR}
+
+\input{chapters/flows-subsecs/val-plots}
+\FloatBarrier
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 4b
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{4b}
+\label{subapp:4b}
+
+\def\valreg{4b}
+\def\vallabel{4b SR}
+
+\input{chapters/flows-subsecs/val-plots}
+\FloatBarrier

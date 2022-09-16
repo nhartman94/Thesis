@@ -1,0 +1,42 @@
+\begin{table}[hbt]
+        \centering
+        \caption{\label{tbl:rw-vars} The set of input variables used for the 2\Pqb to 4\Pqb reweighting in the
+        ggF and VBF channels respectively.
+%        The \Xwt variable in the table denotes the minimum value of the \Xwt variable as obtained from the different combinations of central and \Pqb-tagged jets in the event.
+}
+        \begin{tabular}{p{7cm}|p{7cm}}
+        \toprule
+        \multicolumn{1}{c|}{\textbf{ggF}} & \multicolumn{1}{c}{\textbf{VBF}} \\
+        %{\bfseries ggF} & {\bfseries VBF} \\
+        \hline
+        \begin{enumerate}
+        \itemsep0em
+                \item $\log(p_\mathrm{T} )$ of the $2^\mathrm{nd}$ leading Higgs boson candidate jet
+                \item $\log(p_\mathrm{T} )$ of the $4^\mathrm{th}$ leading Higgs boson candidate jet
+                \item $\log(\Delta R)$ between the closest two Higgs boson candidate jets
+                \item $\log(\Delta R)$ between the other two Higgs boson candidate jets
+                \item Average absolute $\eta$ value of the Higgs boson candidate jets
+                \item $\log(p_\mathrm{T}$) of the di-Higgs system
+                \item $\Delta R$ between the two Higgs boson candidates
+                \item $\Delta \phi$ between jets in the leading Higgs boson candidate
+                \item $\Delta \phi$ between jets in the subleading Higgs boson candidate
+                \item $\log(\Xwt)$%, where $X_{\PW\Pqt}$ is the variable used for the top veto
+                \item Number of jets in the event
+                \item Trigger class index as one-hot encoder
+        \end{enumerate}
+        &
+        \begin{enumerate}
+        \itemsep0em
+                \item Maximum di-jet mass out of the possible pairings of the four Higgs boson candidate jets
+                \item Minimum di-jet mass out of the possible pairings of the four Higgs boson candidate jets
+                \item Energy of the leading Higgs boson candidate
+                \item Energy of the subleading Higgs boson candidate
+                \item Second smallest $\Delta R$ between the jets in the leading Higgs boson candidate (out of the three possible pairings for the leading Higgs candidate)
+                \item Average absolute $\eta$ value of Higgs boson candidate jets
+                \item $\log(\Xwt)$%, where $X_{\PW\Pqt}$ is the variable used for the top veto
+                \item Trigger class index as one-hot encoder
+                \item Year index as one-hot encoder (for years inclusive training)
+        \end{enumerate}\\
+        \bottomrule
+        \end{tabular}
+\end{table}
